@@ -1,420 +1,1014 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>TECHNO 2022</title>
-  </head>
-  <body>
-    <!-- FAQ Section -->
-    <section id="faq">
-      <div class="text-center text-light">
-        <h1 class="faq-text">FAQ</h1>
-        <center>
-          <div class="line"></div>
-        </center>
-      </div>
-      <div class="container-fluid-md-12 py-5 d-flex justify-content-center">
-        <div class="col-11">
-          <div class="accordion accordion-flush" id="faqlist">
-            <h4 class="title">Seputar Techo dan Pendaftaran</h4>
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-1"
-              >
-                Apa itu Techno?
-              </button>
-            </h2>
-            <div
-              id="faq-content-1"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </div>
-            </div>
+    <title>Techno 2022</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="benefit.css" />
+    <link rel="stylesheet" href="mobile-view.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="http://fonts.cdnfonts.com/css/excluded" rel="stylesheet" />
+    <link href="//db.onlinewebfonts.com/c/061efc8676c40502604dff17e3d93029?family=Nostromo" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
 
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-2"
-              >
-                Apakah saya harus bayar untuk mengikuti TECHNO 2022?
-              </button>
-            </h2>
-            <div
-              id="faq-content-2"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here.
-              </div>
-            </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-3"
-              >
-                Apakah acara ini terbatas bagi mahasiswa jurusan CS saja?
-              </button>
-            </h2>
-            <div
-              id="faq-content-3"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
-              </div>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <section id="header">
+        <div class="napbar">
+            <div class="container-fluid nav-web">
+                <nav class="navbar navbar-expand align-content-center">
+                    <div class="container-fluid">
+                        <a href="#" class="col-3 col-md-2">
+                            <img src="./assets/Logo Techno - navbar.png" alt="" class="img-fluid" />
+                        </a>
+
+                        <ul class="navbar-nav navbar-dark justify-content-around col-8 px-4">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about us" class="nav-link">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#event" class="nav-link">EVENTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#faq" class="nav-link">FAQ</a>
+                            </li>
+                        </ul>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary text text-center">
+                            <a href="https://registration.himtibinus.or.id/home" target="_blank"> LOGIN </a>
+                        </button>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="container-md-12 py-5 d-flex justify-content-center">
-        <div class="col-11">
-          <div class="accordion accordion-flush" id="faqlist">
-            <div class="-item">
-              <h4 class="title">Sesi Pengenalan Bahasa Pemrograman (PBP)</h4>
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed py-3"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-4"
-                >
-                  Apa itu Techno?
-                </button>
-              </h2>
-              <div
-                id="faq-content-4"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqlist"
-              >
-                <div class="accordion-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+
+        <!--Mobile navbar-->
+        <div class="overflow-hidden">
+            <div class="btn-menu fixed top-4 right-4">
+                <div class="btn-menu-line1"></div>
+                <div class="btn-menu-line2"></div>
+            </div>
+
+            <div class="nav-area fixed flex flex-col justify-center flex items-center">
+                <a href="#" class="w-50">
+                    <img src="./assets/Logo Techno - navbar.png" alt="" class="img-fluid" />
+                </a>
+
+                <ul class="navbar-nav navbar-dark my-5 text-4xl text-center h-1/2 flex justify-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-xl my-3">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about us" class="nav-link text-xl my-3">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#event" class="nav-link text-xl my-3">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link text-xl my-3">FAQ</a>
+                    </li>
+                </ul>
+
+                <div class="w-full text-center">
+                    <button class="btn btn-primary text text-center w-1/2">
+                        <a href="#" class="text-white"> LOGIN </a>
+                    </button>
                 </div>
-              </div>
             </div>
-
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-5"
-              >
-                Apakah saya harus bayar untuk mengikuti TECHNO 2022?
-              </button>
-            </h2>
-            <div
-              id="faq-content-5"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here.
-              </div>
-            </div>
-
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-6"
-              >
-                Apakah acara ini terbatas bagi mahasiswa jurusan CS saja?
-              </button>
-            </h2>
-            <div
-              id="faq-content-6"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="container-md-12 py-5 d-flex justify-content-center">
-        <div class="col-11">
-          <div class="accordion accordion-flush" id="faqlist">
-            <div class="-item">
-              <h4 class="title">Main Event Techno</h4>
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed py-3"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-7"
-                >
-                  Apa itu Techno?
-                </button>
-              </h2>
-              <div
-                id="faq-content-7"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqlist"
-              >
-                <div class="accordion-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </div>
-              </div>
-            </div>
-
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-8"
-              >
-                Apakah saya harus bayar untuk mengikuti TECHNO 2022?
-              </button>
-            </h2>
-            <div
-              id="faq-content-8"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here.
-              </div>
-            </div>
-
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-9"
-              >
-                Apakah acara ini terbatas bagi mahasiswa jurusan CS saja?
-              </button>
-            </h2>
-            <div
-              id="faq-content-9"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-md-12 py-5 d-flex justify-content-center">
-        <div class="col-11">
-          <div class="accordion accordion-flush" id="faqlist">
-            <div class="-item">
-              <h4 class="title">Himti Kit</h4>
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed py-3"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-10"
-                >
-                  Apa itu Techno?
-                </button>
-              </h2>
-              <div
-                id="faq-content-10"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqlist"
-              >
-                <div class="accordion-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </div>
-              </div>
-            </div>
-
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-11"
-              >
-                Apakah saya harus bayar untuk mengikuti TECHNO 2022?
-              </button>
-            </h2>
-            <div
-              id="faq-content-11"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here.
-              </div>
-            </div>
-
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed py-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-12"
-              >
-                Apakah acara ini terbatas bagi mahasiswa jurusan CS saja?
-              </button>
-            </h2>
-            <div
-              id="faq-content-12"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- End of FAQ Section -->
-
-    <!-- Our Partners Section -->
-    <section id="rocket">
-      <div class="text-center text-light pt-5">
-        <h1 class="partner-text">Our Partners</h1>
-      </div>
-      <center>
-        <div class="line"></div>
-      </center>
-      <div class="container-fluid position-relative" style="overflow-x: hidden">
-        <div class="sponsorship row">
-          <div class="col-12">
-            <div class="text-light">
-              <h1>Sponsors</h1>
+    <div class="sprinkle"></div>
+    <section class="main">
+        <div class="container-fluid">
+            <div class="mx-auto row d-flex align-items-center justify-content-center">
+                <div class="justify-content-center col-8">
+                    <img src="./assets/Logo Techno.png" alt="" class="img-fluid" />
+                </div>
+                <div class="text-center col-6">
+                    <a href="#about us" class="btn btn-primary text my-5 col-sm-6 col-md-4 col-8 fw-bold">
+                      LEARN MORE 
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col rocket-image">
-            <img
-              src="Asset/Rocket/Sponsor rocket-1.png"
-              class="img-fluid"
-              alt=""
-              style="width: 1300px; height: auto"
-            />
-          </div>
-        </div>
-        <div class="planet">
-          <img
-            src="Asset/Planet/finale-removebg-preview 2.png"
-            class=""
-            alt=""
-            style="width: 480px"
-          />
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="partner row">
-          <div class="col">
-            <div class="text">
-              <div class="text-light text-partner">
-                <h1>Media Partners</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col d-flex justify-content-end rocket-image">
-            <img
-              src="Asset/Rocket/Media partner rocket-2.png"
-              class="img-fluid"
-              alt=""
-              style="width: 1300px; height: auto"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid position-relative">
-        <div class="row">
-          <div class="offset-2 col-8 offset-sm-3 col-sm-6">
-            <div class="powered text-center text-light">
-              <h1>Powered By</h1>
-              <img
-                src="./Asset/Dewaweb/Group 102 (1).png"
-                class="img-fluid py-md-5 py-3"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="planet-kiri">
-          <img
-            src="Asset/Planet/finale-removebg-preview 1.png"
-            class=""
-            alt=""
-            style="width: 480px"
-          />
-        </div>
-      </div>
     </section>
-    <!-- End of Our Partners Section -->
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
+    <div class="sprinkleBaru">
+        <img src="Asset/Sprinkles/Sprinkles - 1.png" alt="Asset" class="childImage" style="height: 90%;">
+        <section id="about us">
+            <div class="top-0 bod md:container-fluid position-relative d-flex align-items-start align-items-lg-center align-items-xl-end align-items-sm-end justify-content-center">
+                <!-- position-absolute row d-flex justify-content-between flex-row align-items-center mx-2 py-5  -->
+                <div class="container-fluid introduction flex flex-col items-center w-auto justify-center px-5" style="z-index: 10">
+                    <div class="flex flex-col md:flex-row items-center justify-between my-4 w-full md:w-11/12">
+                        <div class="w-auto text-center py-5">
+                            <div class="span1 col-12 fw-bold text-4xl text-center pb-2 md:text-6xl">
+                                WHAT IS <br />TECHNO?
+                            </div>
+                        </div>
+
+                        <p class="p1-techno col-9 fw-bold text-xl w-full md:w-2/3">
+                            Sebelumnya dikenal dengan HTTP (HIMTI Togetherness and Top Performance), TECHNO merupakan sebuah acara tahunan yang dipersembahkan oleh Himpunan Mahasiswa Teknik Informatika (HIMTI) BINUS University untuk menyambut mahasiswa - mahasiswi baru BINUS School
+                            of Computer Science.
+                        </p>
+                    </div>
+
+                    <div class="w-full flex justify-center md:justify-end w-full md:w-11/12 butcon" style="background-color: #1E2142;">
+                        <button class="btn btn-primary text col-4 col-sm-4 col-md-2 fw-bold z-10 w-1/2 md:w-1/5">
+                            <a href="https://registration.himtibinus.or.id/home" target="_blank"> REGISTER NOW </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="planet-1 position-absolute"></div>
+            </div>
+        </section>
+
+        <!-- <div
+            class="d-flex justify-content-end container-fluid butcon text-center col-12 position-absolute"
+        >
+        </div> -->
+
+        <div class="relative flex h-screen w-full items-center justify-center bg-[#212244]">
+            <div class="planet-timeline1">
+                <img src="Asset/Planet/BUM11I 3 (2).png" class="planetBaru" alt="" />
+            </div>
+            <!-- <div class="flex space-x-2 justify-center toggle">
+              <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+            </div> -->
+            <div class="relative flex h-screen w-full items-center justify-center" style="background-image: url('./5445591-01 7.png')">
+                <!-- <div class="flex space-x-2 justify-center toggle">
+              <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+            </div> -->
+                <div class="flex flex-col relative items-center justify-center h-4/5 w-full lg:w-[39%] overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full flex flex-col items-center">
+                        <h2 class="text-3xl timeline-heading text-white">
+                            TIMELINE
+                        </h2>
+
+                        <svg width="300" class="mt-1" height="4" viewBox="0 0 451 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 4V0H451V4H0Z"
+                                    fill="url(#paint0_linear_2_1036)"
+                                />
+                                <defs>
+                                    <linearGradient
+                                        id="paint0_linear_2_1036"
+                                        x1="422.791"
+                                        y1="1.99972"
+                                        x2="-16.0128"
+                                        y2="1.99972"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stop-color="#6D358C" />
+                                        <stop
+                                            offset="1"
+                                            stop-color="#EAAB54"
+                                            stop-opacity="0"
+                                        />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                    </div>
+
+                    <div class="flex flex-col relative mt-16 items-center justify-center w-full h-full">
+                        <div class="flex absolute card justify-center t4-alt" id="c7">
+                            <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t3-alt" id="c6">
+                            <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t2-alt" id="c5">
+                            <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t1" id="c4">
+                            <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t2" id="c3">
+                            <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t3" id="c2">
+                            <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t4" id="c1">
+                            <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6"></div>
+                        </div>
+                    </div>
+
+                    <!-- timeline -->
+                    <span class="top-16 font-semibold text-[#9145bb] right-3 absolute">2015</span
+                        >
+                        <div
+                            class="top-[6rem] right-6 flex h-full flex-col absolute"
+                        >
+                            <div
+                                class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator"
+                            >
+                                <!-- indicator -->
+                                <div
+                                    class="top-3 right-[1.2rem] z-50 absolute indicator i-1 flex h-full flex-col absolute transition-all duration-300 opacity-0"
+                                >
+                                    <div class="relative">
+                                        <div
+                                            class="min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <!-- ./indicator -->
+                                <a
+                                    data-timeline="7"
+                                    class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 -right-1 bullet-timeline absolute bg-[#9145bb] rounded-full"
+                                ></a>
+                            </div>
+                            <div
+                                class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator"
+                            >
+                                <!-- indicator -->
+                                <div
+                                    class="top-3 right-[1.2rem] z-50 absolute indicator i-2 flex h-full flex-col absolute transition-all duration-300 opacity-0"
+                                >
+                                    <div class="relative">
+                                        <div
+                                            class="min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <!-- ./indicator -->
+                                <a
+                                    data-timeline="6"
+                                    class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"
+                                ></a>
+                            </div>
+                            <div
+                                class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator"
+                            >
+                                <!-- indicator -->
+                                <div
+                                    class="top-3 right-[1.2rem] z-50 absolute indicator i-3 flex h-full flex-col absolute transition-all duration-300 opacity-0"
+                                >
+                                    <div class="relative">
+                                        <div
+                                            class="min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <!-- ./indicator -->
+                                <a
+                                    data-timeline="5"
+                                    class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"
+                                ></a>
+                            </div>
+                            <div
+                                class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator"
+                            >
+                                <!-- indicator -->
+                                <div
+                                    class="top-3 right-[1.2rem] z-50 absolute indicator i-4 flex h-full flex-col absolute transition-all duration-300"
+                                >
+                                    <div class="relative">
+                                        <div
+                                            class="min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <!-- ./indicator -->
+                                <a
+                                    data-timeline="4"
+                                    class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"
+                                ></a>
+                            </div>
+                            <div
+                                class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator"
+                            >
+                                <!-- indicator -->
+                                <div
+                                    class="top-3 right-[1.2rem] z-50 absolute indicator i-5 flex h-full flex-col absolute transition-all duration-300 opacity-0"
+                                >
+                                    <div class="relative">
+                                        <div
+                                            class="min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <!-- ./indicator -->
+                                <a
+                                    data-timeline="3"
+                                    class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"
+                                ></a>
+                            </div>
+                            <div
+                                class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator"
+                            >
+                                <!-- indicator -->
+                                <div
+                                    class="top-3 right-[1.2rem] z-50 absolute indicator i-6 flex h-full flex-col absolute transition-all duration-300 opacity-0"
+                                >
+                                    <div class="relative">
+                                        <div
+                                            class="min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <!-- ./indicator -->
+                                <a
+                                    data-timeline="2"
+                                    class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"
+                                ></a>
+                            </div>
+                            <div
+                                class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator"
+                            >
+                                <!-- indicator -->
+                                <div
+                                    class="top-3 right-[1.2rem] z-50 absolute indicator i-7 flex h-full flex-col absolute transition-all duration-300 opacity-0"
+                                >
+                                    <div class="relative">
+                                        <div
+                                            class="min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <!-- ./indicator -->
+                                <a
+                                    data-timeline="1"
+                                    class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"
+                                ></a>
+                                <span
+                                    class="-bottom-8 font-semibold text-[#9145bb] -left-3 absolute"
+                                    >2021</span
+                                >
+                            </div>
+                        </div>
+                        <!-- ./timeline -->
+                    </div>
+                </div>
+                <div class="planet-timeline2">
+                    <img src="Asset/Planet/finale-removebg-preview 2.png" class="planetBaru" alt="" />
+                </div>
+            </div>
+        <!-- Benefits Section -->
+        <section id="benefits">
+            <div id="box-benefits">
+                <div class="outer-box">
+                    <p>benefits</p>
+                    <div class="under-line mx-auto mb-5"></div>
+                    <div id="inner-box">
+                        <div class="content-box-1 mx-auto shadow-lg benefitCards">
+                            <div class="upper-box">
+                                <div class="content-image">
+                                    <img src="Asset/benefit-icon/starter icon.png">
+                                </div>
+                                <div class="content-text">
+                                    <p>
+                                        Mahasiswa akan dibekali dengan PBP (Pembelajaran Bahasa Pemograman) sebagai persiapan untuk menghadapi mata kuliah Algorithm and Programming.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="lower-box">
+                                <p>STARTER PACK</p>
+                            </div>
+                        </div>
+                        <div class="content-box-2 mx-auto shadow-lg benefitCards">
+                            <div class="upper-box">
+                                <div class="content-image">
+                                    <img src="Asset/benefit-icon/himti-kit icon.png">
+                                </div>
+                                <div class="content-text">
+                                    <p>
+                                        Setelah mengikuti acara TECHNO, mahasiswa yang mengikuti acara dapat mengakses HIMTI KIT yang berisikan materi rangkuman, soal latihan, dan software yang diperlukan selama berkuliah.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="lower-box">
+                                <p>HIMTI KIT</p>
+                            </div>
+                        </div>
+                        <div class="content-box-3 mx-auto shadow-lg benefitCards">
+                            <div class="upper-box">
+                                <div class="content-image">
+                                    <img src="Asset/benefit-icon/inauguration icon.png">
+                                </div>
+                                <div class="content-text">
+                                    <p>
+                                        TECHNO merupakan acara perkumpulan resmi bagi para mahasiswa School of Computer Science. Maka dari itu, acara ini hanya diselenggarakan bagi para Binusian.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="lower-box">
+                                <p>SOCS INAUGURATION</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="benefit-land">
+            </div>
+        </section>
+    </div>
+    <!-- Events Section -->
+    <section id="event">
+        <section class="events">
+            <div id="carouselEventsIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="header">
+                    <div class="text-header">EVENTS</div>
+                    <div class="text-header-hr"></div>
+                    <div class="sub-heading"></div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="event-wrapper flex-column mb-5">
+                            <div class="event-wrapper-content">
+                                <div class="events-content row d-flex justify-content-evenly align-items-center px-5">
+                                    <div class="eventSet">
+                                        <div class="img-event col-lg-4">
+                                            <img src="./Asset/Border/Techno border events.png" alt="techno image" style="max-width: 365px; height: auto;">
+                                        </div>
+                                        <div class="event-desc">
+                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 3</div>
+                                            <br>
+                                            <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang diajarkan merupakan materi dasar bahasa pemrograman C yang akan berguna
+                                                untuk kalian freshmen School of Computer Science yang belum pernah mencoba coding.
+                                            </p>
+                                            <br>
+                                            <p>Date : Senin, 15 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : A <br> Time : 09.00 - 11.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="register-button">
+                                        <button onclick="window.open('https://registration.himtibinus.or.id/events/39');" type="button" class="button">Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="event-wrapper flex-column mb-5">
+                            <div class="event-wrapper-content">
+                                <div class="events-content row d-flex justify-content-evenly align-items-center px-5">
+                                    <div class="eventSet">
+                                        <div class="img-event col-lg-4">
+                                            <img src="./Asset/Border/Techno border events.png" alt="techno image" style="max-width: 365px; height: auto;">
+                                        </div>
+                                        <div class="event-desc">
+                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 3</div>
+                                            <br>
+                                            <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang diajarkan merupakan materi dasar bahasa pemrograman C yang akan berguna
+                                                untuk kalian freshmen School of Computer Science yang belum pernah mencoba coding.
+                                            </p>
+                                            <br>
+                                            <p>Date : Senin, 15 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : B <br> Time : 09.30 - 11.30</p>
+                                        </div>
+                                    </div>
+                                    <div class="register-button">
+                                        <button onclick="window.open('https://registration.himtibinus.or.id/events/40');" type="button" class="button">Register</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="event-wrapper flex-column mb-5">
+                            <div class="event-wrapper-content">
+                                <div class="events-content row d-flex justify-content-evenly align-items-center px-5">
+                                    <div class="eventSet">
+                                        <div class="img-event col-lg-4">
+                                            <img src="./Asset/Border/Techno border events.png" alt="techno image" style="max-width: 365px; height: auto;">
+                                        </div>
+                                        <div class="event-desc">
+                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 3</div>
+                                            <br>
+                                            <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang diajarkan merupakan materi dasar bahasa pemrograman C yang akan berguna
+                                                untuk kalian freshmen School of Computer Science yang belum pernah mencoba coding.
+                                            </p>
+                                            <br>
+                                            <p>Date : Senin, 15 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : C <br> Time : 13.00 - 15.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="register-button">
+                                        <button onclick="window.open('https://registration.himtibinus.or.id/events/41');" type="button" class="button">Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="event-wrapper flex-column mb-5">
+                            <div class="event-wrapper-content">
+                                <div class="events-content row d-flex justify-content-evenly align-items-center px-5">
+                                    <div class="eventSet">
+                                        <div class="img-event col-lg-4">
+                                            <img src="./Asset/Border/Techno border events.png" alt="techno image" style="max-width: 365px; height: auto;">
+                                        </div>
+                                        <div class="event-desc">
+                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 3</div>
+                                            <br>
+                                            <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang diajarkan merupakan materi dasar bahasa pemrograman C yang akan berguna
+                                                untuk kalian freshmen School of Computer Science yang belum pernah mencoba coding.
+                                            </p>
+                                            <br>
+                                            <p>Date : Senin, 15 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : D <br> Time : 13.30 - 15.30</p>
+                                        </div>
+                                    </div>
+                                    <div class="register-button">
+                                        <button onclick="window.open('https://registration.himtibinus.or.id/events/42');" type="button" class="button">Register</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+                </div>
+                <div class="events-footer d-flex flex-row">
+                    <img class="left" src="./Asset/Land/Events land - 1.png" alt="" style="max-width: 278px; height: auto;">
+                    <img class="right" src="./Asset/Land/Events land - 2.png" alt="" style="max-width: 278px; height: auto;">
+                    <div class="fix-gap container-fluid"></div>
+                </div>
+                </section>
+                </section>
+                <!-- End of events section -->
+
+                <!-- Main Event Section - Things to Prepare Section-->
+                <section class="main-event d-flex flex-column container-fluid">
+                    <div class="rocket">
+                        <div class="rocket-img">
+                            <img src="./Asset/Rocket/Rocket main events.png" alt="" style="max-width: 174.71px; height: auto;">
+                        </div>
+                    </div>
+                    <!-- Main Event Section -->
+                    <div class="main-event-wrapper flex-column">
+                        <div class="wrapper-content">
+                            <div id="main-event-header" class="header">
+                                <div class="text-header text-white"> MAIN EVENT</div>
+                                <div class="main-event-hr mt-3"></div>
+                            </div>
+                            <div class="main-event-content row d-flex justify-content-evenly align-items-center px-5">
+                                <div class="mainEvent">
+                                    <div class="img-main-event col-lg-4">
+                                        <img src="./Asset/Home Page/Logo Techno.png" alt="techno image" style="max-width: 390px; max-height: auto;">
+                                    </div>
+                                    <div class="main-event-desc">
+                                        <div class="header-main-event-desc">PELANTIKAN SOCS BINUSIAN 2026</div>
+                                        <br>
+                                        <p>
+                                            Pelantikan SOCS BINUSIAN 2026 merupakan salah satu bagian acara di dialam event TECHNO 2022. Mahasiswa baru School Of Computer Science akan resmi dilantik oleh Dean School Of Computer Science dan bergabung kedalam komunitas BINUSIAN.
+                                        </p>
+                                        <br>
+                                        <p>Date : Minggu, 18 September 2022<br> Location : Youtube, Zoom<br> Time : 13.00 - 17.00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- End of Main Event Section -->
+            <div class="satelite">
+                <div class="satelite-img">
+                    <img src="./Asset/Rocket/Satelit main events.png" alt="" style="max-width: 180px; height: auto;">
+                </div>
+            </div>
+
+            <!-- Things to Prepare Section -->
+            <div class="things-to-prepare container-fluid">
+
+                <div id="ttp-header" class="header">
+                    <div class="text-header text-white">THINGS TO PREPARE</div>
+                    <div class="ttp-hr mt-1"></div>
+                </div>
+
+                <div class="ttp-contents">
+                    <!-- dev c card -->
+                    <a href="https://sourceforge.net/projects/orwelldevcpp/" class="ttp-wrapper flex-column text-white" style="z-index: 1; text-decoration: none;" target="_blank">
+                        <div class="ttp-content-img">
+                            <img src="./Asset/Additional/c-logo-icon-28406 1.png" alt="devc logo" style="max-width: 153px; height: auto;" class="imageLink">
+                        </div>
+                        <div class="ttp-content-desc">
+                            <div class="ttp-content-desc-text">
+                                DEV C++
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End of Dev C card -->
+                    <!-- Zoom Meeting card -->
+                    <a href="https://zoom.us/download" class="ttp-wrapper flex-column text-white" style="z-index: 1; text-decoration: none;" target="_blank">
+                        <div class="ttp-content-img">
+                            <img src="./Asset/Additional/zoom.png" alt="zoom logo" style="max-width: 153px; height: auto;" class="imageLink">
+                        </div>
+                        <div class="ttp-content-desc">
+                            <div class="ttp-content-desc-text">
+                                ZOOM MEETING
+                            </div>
+                        </div>
+                    </a>
+                    <!-- End of Zoom Meeting Card -->
+                </div>
+                <div class="astronaut">
+                    <div class="astronaut-img">
+                        <img src="./Asset/Maskot/Things to prepare maskot.png" alt="" style="max-width: 443px; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <!-- End of Things to Prepare Section -->
+            </section>
+            <!-- End of Main Event - Things to Prepare Section -->
+            <!-- FAQ Section -->
+            <section id="faq">
+                <div class="text-center text-light">
+                    <h1 class="faq-text">FAQ</h1>
+                    <center>
+                        <div class="line"></div>
+                    </center>
+                </div>
+                <div class="container-fluid-md-12 py-5 d-flex justify-content-center">
+                    <div class="col-11">
+                        <div class="accordion accordion-flush" id="faqlist">
+                            <h4 class="title">Seputar Techo dan Pendaftaran</h4>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                            Apa itu TECHNO?
+                        </button>
+                            </h2>
+                            <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    TECHNO 2022 merupakan acara kebersamaan dalam rangka menyambut dan melantik mahasiswa baru School of Computer Science (SOCS) BINUS UNIVERSITY 2026. Karena itu, acara ini hanya diselenggarakan dan dapat diikut sekali oleh setiap SOCS BINUSIAN 2026. Acara
+                                    TECHNO juga dikemas dengan beberapa penampilan, games, bahkan materi-materi pembelajaran melalui PBP dan HIMTI KIT.
+                                </div>
+                            </div>
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                            Apakah saya harus bayar untuk mengikuti TECHNO 2022?
+                        </button>
+                            </h2>
+                            <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Secara singkat, TIDAK. Anda dapat langsung mendaftar secara gratis. Acara-acara TECHNO sebelumnya memang dikenakan harga tiket masuk (sebesar Rp 150.000) untuk menunjang biaya transportasi dan catering makanan. Sedangkan, TECHNO tahun ini diadakan secara
+                                    online, sehingga kedua biaya tersebut dapat dipangkas secara penuh.
+                                </div>
+                            </div>
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                            Apakah acara ini terbatas bagi mahasiswa jurusan CS saja?
+                        </button>
+                            </h2>
+                            <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body">
+                                    Tidak, acara ini juga terbuka bagi mahasiswa dalam setiap jurusan yang berada di dalam naungan fakultas School of Computer Science, yakni:<br />1. Computer Science (Regular)
+                                    <br />2. Computer Science - Global Class<br />3. Game Application and Technology (GAT)
+                                    <br />4. Mobile Application and Technology (MAT)
+                                    <br />5. Computer Science - Applied Statistics (TI + Stat)
+                                    <br />6. Computer Science - Applied Mathematics (TI + Mat)
+                                    <br />7. Cyber Security<br />8. PPTI BCA<br />9. Master Track Computer Science<br />10. Computer Science - Software Engineering
+                                    <br />11. Data Science
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-md-12 py-5 d-flex justify-content-center">
+                    <div class="col-11">
+                        <div class="accordion accordion-flush" id="faqlist2">
+                            <h4 class="title">Sesi Pengenalan Bahasa Pemrograman (PBP)</h4>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                            Mengapa saya harus belajar C/Python terlebih dahulu?
+                        </button>
+                            </h2>
+                            <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                <div class="accordion-body">
+                                    Jika Anda merupakan seorang pemula, C dan Python merupakan salah satu bahasa pemrograman yang dapat dipakai untuk memahami prinsip algoritma secara mudah. Namun, jika Anda sudah berpengalaman dalam bahasa pemrograman lainnya, perlu diketahui bahwa bahasa
+                                    C akan dipakai dalam awal perkuliahan melalui mata kuliah COMP6047 - Algorithm and Programming dan COMP6048 - Data Structures. Begitu pula dengan bahasa Python yang digunakan dalam perkuliahan di BINUS @SENAYAN.
+                                </div>
+                            </div>
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                            Apa itu IDE (Integrated Development Environment)?
+                        </button>
+                            </h2>
+                            <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                <div class="accordion-body">
+                                    Sebuah IDE, seperti Dev-C++, merupakan sebuah program editor yang bertujuan untuk mengatur dan mempermudah proses pemgembangan dan pengujian program melalui bahasa pemrograman tertentu. Jika dibandingkan dengan aplikasi seperti Notepad, Dev-C++ dan berbagai
+                                    IDE lainnya dapat mendeteksi berbagai jenis error seperti syntax error yang dapat mengakibatkan masalah saat program tersebut di-compile.
+                                </div>
+                            </div>
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                            Apakah saya boleh menggunakan IDE lain untuk belajar bahasa C?
+                        </button>
+                            </h2>
+                            <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                <div class="accordion-body">
+                                    Meskipun Anda masih dapat membuat program C menggunakan IDE dan compiler lainnya (seperti Visual Studio, Geany, dan Clang), perlu diketahui bahwa IDE Dev-C++ dan compiler TDM-GCC (terpasang secara default di dalam Dev-C++) akan diwajibkan dalam sesi dan
+                                    ujian praktikum, sebagaimana ditetapkan oleh Software Laboratory Center (SLC) BINUS UNIVERSITY.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-md-12 py-5 d-flex justify-content-center">
+                    <div class="col-11">
+                        <div class="accordion accordion-flush" id="faqlist3">
+                            <h4 class="title">Main Event Techno</h4>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                            Bagaimana terhitung hadir mengikuti TECHNO 2022?
+                        </button>
+                            </h2>
+                            <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist3">
+                                <div class="accordion-body">
+                                    Peserta dapat terhitung hadir dengan cara ikut berpartisipasi dan aktif di acara TECHNO (18 September 2022) dari awal hingga akhir acara. Serta mengisi semua absensi yang telah disediakan.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-md-12 py-5 d-flex justify-content-center">
+                    <div class="col-11">
+                        <div class="accordion accordion-flush" id="faqlist4">
+                            <h4 class="title">Himti Kit</h4>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-10">
+                            Apa itu HIMTI KIT?
+                        </button>
+                            </h2>
+                            <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist4">
+                                <div class="accordion-body">
+                                    HIMTI Kit merupakan sebuah starter kit yang terdiri atas materi perkuliahan dari Semester 1-4 serta software yang akan digunakan selama perkuliahan. HIMTI Kit dapat digunakan sebagai acuan tentang materi-materi yang akan dipelajari nantinya.
+                                </div>
+                            </div>
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-11">
+                            Apa saja syarat untuk mendapatkan akses HIMTI KIT?
+                        </button>
+                            </h2>
+                            <div id="faq-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist4">
+                                <div class="accordion-body">
+                                    Untuk mendapatkan akses HIMTI Kit, Anda harus dinyatakan hadir dalam acara Main Event TECHNO 2022. Periode absensi akan diumumkan secara langsung oleh panitia saat Main Event berlangsung.
+                                </div>
+                            </div>
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-12">
+                            Mengapa saya masih belum bisa mengakses HIMTI KIT, padahal saya
+                            sudah dinyatakan hadir saat Main Event?
+                        </button>
+                            </h2>
+                            <div id="faq-content-12" class="accordion-collapse collapse" data-bs-parent="#faqlist4">
+                                <div class="accordion-body">
+                                    Segera hubungi Contact Person untuk informasi lebih lanjut.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of FAQ Section -->
+
+            <!-- Our Partners Section -->
+            <section id="rocket">
+                <div class="text-center text-light pt-5">
+                    <h1 class="partner-text">Our Partners</h1>
+                </div>
+                <center>
+                    <div class="line"></div>
+                </center>
+                <div class="container-fluid position-relative" style="overflow-x: hidden">
+                    <div class="sponsorship row">
+                        <div class="col-12">
+                            <div class="text-light">
+                                <h1 class="supportedBy">Sponsors</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col rocket-image">
+                            <img src="Asset/Rocket/Sponsor rocket-1.png" class="img-fluid" alt="" style="width: 1300px; height: auto" />
+                        </div>
+                    </div>
+                    <div class="planet">
+                        <img src="Asset/Planet/finale-removebg-preview 2.png" class="" alt="" style="width: 480px" />
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="partner row">
+                        <div class="col">
+                            <div class="text">
+                                <div class="text-light text-partner">
+                                    <h1 class="supportedBy">Media Partners</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-end rocket-image">
+                            <img src="Asset/Rocket/Media partner rocket-2.png" class="img-fluid" alt="" style="width: 1300px; height: auto" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid position-relative supportedBottom">
+                    <div class="rows">
+                        <div>
+                            <div class="powered text-center text-light">
+                                <h1 class="supportedBy">Supported By</h1>
+                                <a href="https://www.dewaweb.com/" class="dewaWebCenter" style="z-index: 1; text-decoration: none;" target="_blank">
+                                    <img src="./Asset/Dewaweb/Group 102.png" class="img py-md-5 py-3" style="width: 15%;" alt="logo dewaweb" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="planet-kiri">
+                        <img src="Asset/Planet/finale-removebg-preview 1.png" class="" alt="" style="width: 480px" />
+                    </div>
+                </div>
+            </section>
+            <!-- End of Our Partners Section -->
+            <div id="foot">
+                <div class="foot-sprinkle">
+                    <div class="hole">
+                        <div class="foot-paddings">
+                            <div class="foot-astronotkiri">
+                                <img src="asset/Maskot/Maskot-2.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="foot-isi">
+                                <h3 class="foot-contact">Contact Us</h3>
+                                <div class="foot-garis"></div>
+                                <div class="foot-instagram">
+                                    <img src="Asset/Footer/Instagram.png" class="img-fluid" alt="" />
+                                    <a href="https://www.instagram.com/techno2022official" target="_blank" style="text-decoration: none">
+                                        <p class="text-sosmed">@techno2022official</p>
+                                    </a>
+                                </div>
+                                <div class="foot-line">
+                                    <img src="Asset/Footer/Line.png" class="img-fluid" alt="" />
+                                    <a href="https://line.me/R/ti/p/@mot8001o" target="_blank" style="text-decoration: none">
+                                        <p class="text-sosmed">@mot8001o</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="foot-astronotkanan">
+                                <img src="asset/Maskot/Maskot-2.png" class="img-fluid" alt="" />
+                            </div>
+                        </div>
+                        <div class="blackhole">
+                            <img src="asset/Footer/Group 71.png" class="img-fluid" alt="" />
+                        </div>
+                    </div>
+                    <div class="foot-logo">
+                        <div class="foot-logotechno">
+                            <img src="asset/Home Page/Logo Techno - navbar.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="foot-logobinus">
+                            <img src="asset/Footer/HIMTI-PUTIH-min 1.png" alt="" class="img-fluid" />
+                            <img src="asset/Footer/Logo_Binus_Putih 1.png" alt="" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="foot-copyright">
+                        <p>
+                            &copy;2022 Himpunan Mahasiswa Teknik Informatika (HIMTI) BINUS UNIVERSITY. All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="planets">
+                        <img src="asset/Planet/BUM11I 3 (1).png" alt="" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script>
+                let state_now = 4;
+                renderTimeline();
+
+                function renderTimeline(el = null, cus = null) {
+                    let data_timeline = parseInt($(el).attr('data-timeline'));
+                    let step_next = Math.abs(state_now - 1);
+                    if (data_timeline) {
+                        step_next = data_timeline - 1;
+                        let count_step = Math.abs(data_timeline - state_now);
+                        state_now = data_timeline;
+
+                        // render card
+                        clear_card();
+
+                        $(`#c${String(data_timeline)}`).addClass('t1');
+                        $(`#c${String(data_timeline - 1)}`).addClass('t2-alt');
+                        $(`#c${String(data_timeline - 2)}`).addClass('t3-alt');
+                        $(`#c${String(data_timeline - 3)}`).addClass('t4-alt');
+
+                        $(`#c${String(data_timeline + 1)}`).addClass('t2');
+                        $(`#c${String(data_timeline + 2)}`).addClass('t3');
+                        $(`#c${String(data_timeline + 3)}`).addClass('t4');
+                    } else if (cus) {} else {
+                        clear_card();
+                        $(`#c${String(state_now)}`).addClass('t1');
+                        $(`#c${String(state_now - 1)}`).addClass('t2-alt');
+                        $(`#c${String(state_now - 2)}`).addClass('t3-alt');
+                        $(`#c${String(state_now - 3)}`).addClass('t4-alt');
+                        $(`#c${String(state_now + 1)}`).addClass('t2');
+                        $(`#c${String(state_now + 2)}`).addClass('t3');
+                        $(`#c${String(state_now + 3)}`).addClass('t4');
+
+                        $('.indicator').removeClass('opacity-100');
+                        $('.indicator').addClass('opacity-0');
+                        if (state_now == 1) {
+                            $('.i-1').removeClass('opacity-0');
+                            $('.i-1').addClass('opacity-100');
+                        } else if (state_now == 2) {
+                            $('.i-2').removeClass('opacity-0');
+                            $('.i-2').addClass('opacity-100');
+                        } else if (state_now == 3) {
+                            $('.i-3').removeClass('opacity-0');
+                            $('.i-3').addClass('opacity-100');
+                        } else if (state_now == 4) {
+                            $('.i-4').removeClass('opacity-0');
+                            $('.i-4').addClass('opacity-100');
+                        } else if (state_now == 5) {
+                            $('.i-5').removeClass('opacity-0');
+                            $('.i-5').addClass('opacity-100');
+                        } else if (state_now == 6) {
+                            $('.i-6').removeClass('opacity-0');
+                            $('.i-6').addClass('opacity-100');
+                        } else if (state_now == 7) {
+                            $('.i-7').removeClass('opacity-0');
+                            $('.i-7').addClass('opacity-100');
+                        }
+                    }
+                }
+
+                function clear_card() {
+                    $('.card').removeClass('t1');
+                    $('.card').removeClass('t2');
+                    $('.card').removeClass('t2-alt');
+                    $('.card').removeClass('t3');
+                    $('.card').removeClass('t3-alt');
+                    $('.card').removeClass('t4');
+                    $('.card').removeClass('t4-alt');
+                }
+
+                function clear() {
+                    $('.bullet-timeline').css('transform', 'scale(1)');
+                }
+
+                $('.bullet-timeline').click(function() {
+                    renderTimeline(this);
+                    $('.indicator').removeClass('opacity-100');
+                    $('.indicator').addClass('opacity-0');
+                    $(this).prev().removeClass('opacity-0');
+                    $(this).prev().addClass('opacity-100');
+                    setTimeout(() => {
+                        clear();
+                        $(this).css('transform', 'scale(1.4)');
+                    }, 30);
+                });
+            </script>
+            <script>
+                $(window).scroll(function() {
+                    if ($(window).scrollTop()) {
+                        $('.napbar').addClass('black');
+                    } else {
+                        $('.napbar').removeClass('black');
+                    }
+                });
+            </script>
+
+            <script src="menu.js" defer></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
 </html>

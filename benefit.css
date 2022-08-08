@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: excluded;
+    src: url('font/Excluded.ttf');
+}
+
+@font-face {
+    font-family: fredoka;
+    src: url('font/Fredoka-VariableFont_wdth\,wght.ttf');
+}
+
+#benefits {
+    background-color: #201E41;
+    height: 100%;
+}
+
+#benefits #box-benefits {
+    padding: 15% 0 10% 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#benefits .outer-box {
+    position: relative;
+    border-radius: 66px;
+    padding: 60px 0 50px 0;
+    height: auto;
+    width: 90%;
+    background: rgba(64, 61, 94, 0.5);
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#benefits .under-line {
+    width: 472px;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(234, 171, 84, 0), rgba(109, 53, 140, 1));
+    ;
+}
+
+#benefits #inner-box {
+    position: relative;
+    display: grid;
+    padding: 20px 0 50px 0;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'satu dua tiga';
+}
+
+#benefits .content-box-1 {
+    position: relative;
+    border-radius: 33px;
+    padding: 0;
+    height: 450px;
+    width: 350px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    grid-area: satu;
+}
+
+#benefits .content-box-2 {
+    position: relative;
+    border-radius: 33px;
+    padding: 0;
+    height: 450px;
+    width: 350px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    grid-area: dua;
+}
+
+#benefits .content-box-3 {
+    position: relative;
+    border-radius: 33px;
+    padding: 0;
+    height: 450px;
+    width: 350px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    grid-area: tiga;
+}
+
+#benefits .upper-box {
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
+    position: absolute;
+    height: 81%;
+    width: 100%;
+    background-image: linear-gradient(rgba(32, 31, 65, 1), rgba(62, 49, 92, 1));
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#benefits .lower-box {
+    position: absolute;
+    display: flex;
+    padding: 25px;
+    height: 19%;
+    width: 100%;
+    background-image: linear-gradient(rgba(239, 163, 195, 1), rgba(223, 124, 136, 0.8));
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#benefits .content-image {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#benefits .content-image img {
+    height: 131px;
+}
+
+#benfits .content-text {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#benefits .outer-box p {
+    font-family: excluded;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+#benefits .lower-box p {
+    font-family: excluded;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 23px;
+}
+
+#benefits .content-text p {
+    font-weight: 300;
+    font-family: fredoka;
+    font-size: 16px;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#benefits #benefit-land {
+    position: relative;
+    background-image: url(asset/Land/Benefit\ land.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1330px) {
+    #benefits #inner-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'satu dua' 'tiga tiga';
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    #benefits #benefit-land {
+        height: 180px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #benefits #inner-box {
+        display: block;
+    }
+    #benefits .content-box-1 {
+        margin-bottom: 50px;
+    }
+    #benefits .content-box-2 {
+        margin-bottom: 50px;
+    }
+    #benefits #benefit-land {
+        height: 130px;
+        margin: 0;
+    }
+}
