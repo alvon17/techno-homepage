@@ -2,6 +2,7 @@
     .nav-web {
         display: none;
     }
+
     /* Mobile Header */
     /*menu icon*/
     .btn-menu {
@@ -15,67 +16,64 @@
         border-radius: 2px;
         transition: all 0.5s ease-in-out;
         cursor: pointer;
-        background: linear-gradient(180deg, #df7c88 0%, #efa3c377 100%);
-        z-index: 20;
+        background-color: #f9ed87;
     }
+
     .btn-menu-line1 {
         display: block;
         width: 25px;
         height: 4px;
-        border: 2px solid white;
+        border: 2px solid rgb(38, 25, 60);
         transition: all 0.5s ease-in-out;
         margin: 3px 0px 3px 0px;
-        z-index: 20;
     }
+
     .btn-menu-line2 {
         display: block;
         width: 25px;
         height: 4px;
-        border: 2px solid white;
+        border: 2px solid rgb(38, 25, 60);
         transition: all 0.5s ease-in-out;
         margin: 3px 0px 3px 0px;
-        z-index: 20;
     }
+
     .btn-menu-line1.open {
         transform: rotate(45deg) translate(3px, 4px);
     }
+
     .btn-menu-line2.open {
         transform: rotate(-45deg) translate(3px, -4px);
     }
+
     /*menu area*/
     .nav-area {
         position: fixed;
-        width: 100%;
-        height: 100%;
-        /* padding: 10px; */
+        width: 180px;
+        height: auto;
+        padding: 10px;
         border-radius: 5px;
-        top: 0;
-        left: 0;
-        background: linear-gradient(180deg, #4d3368 10%, #6d368c 100%);
+        top: 65px;
+        right: 32px;
+        background: #333332;
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s ease;
-        display: flex;
     }
+
     .nav-area.unhideMenu {
         opacity: 1;
         visibility: visible;
         transition: all 0.5s ease;
     }
+
     .nav-item a {
         color: whitesmoke;
         border-bottom: 1px solid white;
     }
+
     /*introduction area*/
-    .introduction {
-        display: flex;
-        flex-direction: column;
-    }
+
     .introduction p {
         font-size: 16px;
-    }
-    /* disable-scrolling */
-    .disableScroll {
-        overflow-y: hidden;
     }
 }

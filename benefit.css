@@ -174,11 +174,12 @@ body {
 @media only screen and (max-width: 1330px) {
     #benefits #inner-box {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 'satu dua' 'tiga tiga';
+        grid-template-areas: 'satu dua''tiga tiga';
         justify-content: center;
         align-items: center;
         gap: 50px;
     }
+
     #benefits #benefit-land {
         height: 180px;
         margin: 0;
@@ -189,14 +190,42 @@ body {
     #benefits #inner-box {
         display: block;
     }
+
     #benefits .content-box-1 {
         margin-bottom: 50px;
     }
+
     #benefits .content-box-2 {
         margin-bottom: 50px;
     }
+
     #benefits #benefit-land {
         height: 130px;
         margin: 0;
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    #benefits .outer-box p {
+        font-size: 35px;
+    }
+
+    #benefits .content-text p {
+        font-size: 20px;
+    }
+
+    #benefits .content-image {
+        justify-content: center;
+        height: 25%;
+    }
+}
+
+@media(max-width: 370px) {
+    #benefits .outer-box p {
+        font-size: 22px;
+    }
+
+    #benefits .content-text p {
+        font-size: 15px;
     }
 }
