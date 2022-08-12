@@ -217,13 +217,14 @@ body {
     }
 }
 
-@media(max-width: 370px) {
+@media(max-width: 425px) {
     #benefits .outer-box p {
         font-size: 22px;
     }
 
     #benefits .content-text p {
         font-size: 15px;
+        margin-top: 80px;
     }
 }
 
