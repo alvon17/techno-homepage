@@ -30,25 +30,71 @@
         .learnMore:hover {
             opacity: 0.7;
         }
+        
+        .isi {
+            width: 16rem;
+            height: 7rem;
+        }
+        
+        @media (min-height: 653px) and (max-height: 653px) and (min-width: 280px) and (max-width: 280px) {
+            .isi {
+                width: 10rem;
+                height: 5rem;
+            }
+        }
+        
+        @media (min-height: 1180px) and (max-height: 1180px) and (min-width: 820px) and (max-width: 820px) {
+            .planet-1 {
+                background-position: 0% 0%;
+                background-size: auto;
+            }
+            .isi {
+                width: 25rem;
+                height: 12rem;
+            }
+        }
+        
+        @media (min-height: 1024px) and (max-height: 1024px) and (min-width: 768px) and (max-width: 768px) {
+            .isi {
+                width: 20rem;
+                height: 9rem;
+            }
+            .main .btn {
+                width: 18rem;
+            }
+        }
+        
+        @media (min-height: 1368px) and (max-height: 1368px) and (min-width: 912px) and (max-width: 912px) {
+            .planet-1 {
+                background-position: 0% 0%;
+                background-size: auto;
+            }
+            .butcon {
+                padding-top: 80px;
+            }
+            .isi {
+                width: 29rem;
+                height: 12rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <section id="header">
-        <div class="napbar">
+        <div id="stars" style="z-index: -10;"></div>
+        <div id="stars2" style="z-index: -10;"></div>
+        <div id="stars3" style="z-index: -10;"></div>
 
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-
-
-            <div class="container-fluid nav-web">
-                <nav class="navbar navbar-expand align-content-center">
+    </section>
+    <div class="stickyan">
+        <div class="napbar" style="position: absolute; z-index: 200; background: transparent;">
+            <div class="nav-web">
+                <nav class="navbar navbar-expand align-content-center" style="display: flex; align-items: center;">
                     <div class="container-fluid">
-                        <a href="#" class="col-3 col-md-2">
+                        <a href="#" class="col-3 col-md-2" style="padding-left: 12px;">
                             <img src="./assets/Logo Techno - navbar.png" alt="" class="img-fluid" />
                         </a>
-
                         <ul class="navbar-nav navbar-dark justify-content-around col-8 px-4">
                             <li class="nav-item">
                                 <a href="#" class="nav-link">HOME</a>
@@ -63,12 +109,9 @@
                                 <a href="#faq" class="nav-link">FAQ</a>
                             </li>
                         </ul>
-
-
-                        <button class="btn btn-primary text text-center" onclick="window.open('https://registration.himtibinus.or.id/home');" type="button">
+                        <button class="login" onclick="window.open('https://registration.himtibinus.or.id/home');" type="button" style="margin-right: 12px;">
                             <p> LOGIN </p>
                         </button>
-
                     </div>
                 </nav>
             </div>
@@ -97,23 +140,21 @@
                     </li>
                 </ul>
 
-                <div class="w-full text-center">
-                    <button class="btn btn-primary text text-center">
-                        <a href="https://registration.himtibinus.or.id/home" target="_blank" class="text-white"> LOGIN
-                        </a>
-                    </button>
-                </div>
+                <button class="login-mobile">
+                    <a href="https://registration.himtibinus.or.id/home" target="_blank" class="text-white"> LOGIN
+                    </a>
+                </button>
+
             </div>
         </div>
-    </section>
-
+    </div>
     <section class="main d-flex align-items-center justify-content-center">
         <div class="mx-auto row d-flex align-items-center justify-content-center">
             <div class="logoz justify-content-center col-8">
                 <img src="./assets/Logo Techno.png" alt="" class="img-fluid" data-aos="zoom-in" data-aos-duration="1000" />
             </div>
             <div class="text-center col-6">
-                <a href="#about-us" class="btn btn-primary text my-5 col-sm-6 col-md-4 col-8 fw-bold" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                <a href="#about-us" class="btn btn-primary text my-5 fw-bold" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
                     <p class="learn"> LEARN MORE </p>
                 </a>
             </div>
@@ -121,27 +162,27 @@
     </section>
 
     <section id="about-us">
-        <div class="top-0 bod md:container-fluid position-relative d-flex align-items-lg-center align-items-xl-end align-items-sm-end justify-content-center aboutContent" style="background-image: url( './5445591-01 7.png')">
+        <div class="top-0 bod md:container-fluid position-relative d-flex align-items-lg-center justify-content-center aboutContent" style="background-image: url( './5445591-01 7.png')">
+            <div class="planet-1"></div>
             <!-- position-absolute row d-flex justify-content-between flex-row align-items-center mx-2 py-5  -->
-            <div class="container-fluid flex flex-col items-center w-auto justify-center introduction" style="z-index: 10">
-                <div class="flex md:flex-row items-center justify-between my-4 w-full baru">
-                    <div class="w-auto text-center py-5 ">
-                        <div class="whatzz span1 col-12 fw-bold text-4xl text-center pb-2 md:text-6xl" data-aos="fade-right" data-aos-duration="1000">
-                            WHAT IS <br />TECHNO?
+            <div class="container-fluid flex flex-col items-center w-auto justify-center introduction">
+                <div class="flex items-center justify-between w-full baru">
+                    <div class="col w-auto text-center">
+                        <div class="row whatzz span1 col-12 fw-bold text-center pb-2" data-aos="fade-right" data-aos-duration="1000">
+                            WHAT IS TECHNO?
                         </div>
                     </div>
-                    <p class="p1-techno col-9 fw-bold text-xl w-full md:w-2/3 " data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                    <p class="col p1-techno col-9 fw-bold text-xl w-full md:w-2/3 " data-aos="fade-left" data-aos-duration="1000">
                         Sebelumnya dikenal dengan HTTP (HIMTI Togetherness and Top Performance), TECHNO merupakan sebuah acara tahunan yang dipersembahkan oleh Himpunan Mahasiswa Teknik Informatika (HIMTI) BINUS University untuk menyambut mahasiswa - mahasiswi baru BINUS School
                         of Computer Science.
                     </p>
                 </div>
-                <div class="w-full flex md:justify-end w-full md:w-11/12 butcon" style="background-color: #1E2142;">
-                    <button class="btn btn-primary text col-4 col-sm-4 col-md-2 fw-bold z-10  md:w-1/5 " data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" onclick="window.open('https://registration.himtibinus.or.id/home');" type="button">
+                <div class="w-full butcon" style="background-color: #1E2142;">
+                    <button class="btn btn-primary text col-4 col-sm-4 col-md-2 fw-bold z-10  md:w-1/5 " data-aos="fade-left" data-aos-duration="1000" onclick="window.open('https://registration.himtibinus.or.id/home');" type="button">
                         <p class="now"> REGISTER NOW </p>
                     </button>
                 </div>
             </div>
-            <div class="planet-1 position-absolute"></div>
         </div>
     </section>
 
@@ -150,7 +191,7 @@
         >
         </div> -->
 
-    <div class="relative flex h-screen w-full items-center justify-center bg-[#212244]">
+    <div class="relative flex h-screen w-full items-center justify-center bg-[#212244] containerTimeline">
         <!-- <div class="flex space-x-2 justify-center toggle ">
           <button type="button " class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
                         active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ">Button</button>
@@ -165,35 +206,38 @@
                     <h2 class="text-3xl timeline-heading text-white">
                         TIMELINE
                     </h2>
+                    <div class="imageLine" style="width: 50%;">
+                        <img src="Asset/Vector.png" alt="">
+                    </div>
                 </div>
 
-                <div class="flex flex-col relative mt-16 items-center justify-center w-full h-full isiTimeline" data-aos="flip-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                <div class="flex flex-col relative mt-16 items-center justify-center w-full h-full isiTimeline" data-aos="flip-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" style="position: relative; z-index: 100;">
                     <div class="flex absolute card justify-center t4-alt" id="c7">
-                        <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2015.png'); background-size: cover;"></div>
+                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2015.png'); background-size: cover;"></div>
                     </div>
                     <div class="flex absolute card justify-center t3-alt" id="c6">
-                        <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2016.png'); background-size: cover;"></div>
+                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2016.png'); background-size: cover;"></div>
                     </div>
                     <div class="flex absolute card justify-center t2-alt" id="c5">
-                        <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2017.png'); background-size: cover;"></div>
+                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2017.png'); background-size: cover; "></div>
                     </div>
                     <div class="flex absolute card justify-center t1" id="c4">
-                        <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2018.png'); background-size: cover;"></div>
+                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2018.png'); background-size: cover;"></div>
                     </div>
                     <div class="flex absolute card justify-center t2" id="c3">
-                        <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2019.png'); background-size: cover;"></div>
+                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2019.png'); background-size: cover;"></div>
                     </div>
                     <div class="flex absolute card justify-center t3" id="c2">
-                        <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2020.png'); background-size: cover;"></div>
+                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/HTTP\ 2020.png'); background-size: cover;"></div>
                     </div>
                     <div class="flex absolute card justify-center t4" id="c1">
-                        <div class="block w-64 h-28 max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/Techno\ 2021.png'); background-size: cover;"></div>
+                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi" style="background-image: url( 'Logo/Techno\ 2021.png'); background-size: cover;"></div>
                     </div>
                 </div>
 
                 <!-- timeline -->
                 <span class="top-16 font-semibold text-[#9145bb] right-3 absolute">2015</span>
-                <div class="top-[6rem] right-6 flex h-full flex-col absolute">
+                <div class="top-[6rem] right-6 flex h-full flex-col absolute" style="position: absolute; z-index: 100;">
                     <div class="h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
                         <!-- indicator -->
                         <div class="top-3 right-[1.2rem] z-50 absolute indicator i-1 flex h-full flex-col absolute transition-all duration-300 opacity-0">
@@ -263,16 +307,16 @@
                         </div>
                         <!-- ./indicator -->
                         <a data-timeline="1 " class="top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
-                        <span class="-bottom-8 font-semibold text-[#9145bb] -left-3 absolute">2021</span>
+                        <span class="-bottom-8 font-semibold text-[#9145bb] -left-6 absolute">2021</span>
                     </div>
                 </div>
                 <!-- ./timeline -->
             </div>
         </div>
     </div>
-    <section id="benefits" style="background-image: url( './5445591-01 7.png')">
+    <section id="benefits" style="background-image: url( './5445591-01 7.png');">
         <div id="box-benefits">
-            <div class="outer-box">
+            <div class="outer-box" style="position: relative; z-index: 100;">
                 <p data-aos="zoom-in" data-aos-duration="1000">benefits</p>
                 <div class="under-line mx-auto mb-5"></div>
                 <div id="inner-box">
@@ -328,7 +372,7 @@
     </section>
     <!-- Events Section -->
     <section id="event">
-        <section class="events">
+        <section class="events" style="position: relative; z-index: 100;">
             <div id="carouselEventsIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -483,7 +527,7 @@
             </div>
         </div>
         <!-- Main Event Section -->
-        <div class="main-event-wrapper flex-column">
+        <div class="main-event-wrapper flex-column" style="position: relative; z-index: 100;">
             <div class="wrapper-content">
                 <div id="main-event-header" class="header">
                     <div class="text-header text-white" data-aos="zoom-in">MAIN EVENT</div>
@@ -524,32 +568,34 @@
                 <div class="ttp-hr mt-1"></div>
             </div>
 
-            <div class="ttp-content d-flex justify-content-evenly align-items-center px-5 gap-md-5">
-
+            <div class="ttp-contents d-flex justify-content-evenly align-items-center gap-md-5" style="position: relative; z-index: 100;">
                 <!-- dev c card -->
-                <a href="https://sourceforge.net/projects/orwelldevcpp/" class="ttp-wrapper flex-column text-white" style="z-index: 1; text-decoration: none;" target="_blank">
-                    <div class="ttp-content-img">
-                        <img src="./Additional/c-logo-icon-28406 1.png" alt="devc logo" style="max-width: 153px; height: auto;">
-                    </div>
-                    <div class="ttp-content-desc">
-                        <div class="ttp-content-desc-text">
-                            DEV C++
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <a href="https://sourceforge.net/projects/orwelldevcpp/" class="ttp-wrapper flex-column text-white" style="z-index: 1; text-decoration: none;" target="_blank">
+                        <div class="ttp-content-img">
+                            <img src="./Additional/c-logo-icon-28406 1.png" alt="devc logo" style="max-width: 153px; height: auto;">
                         </div>
-                    </div>
-                </a>
+                        <div class="ttp-content-desc">
+                            <div class="ttp-content-desc-text">
+                                DEV C++
+                            </div>
+                        </div>
+                    </a>
+                </div>
                 <!-- End of Dev C card -->
-
                 <!-- Zoom Meeting card -->
-                <a href="https://zoom.us/download" class="ttp-wrapper flex-column text-white" style="z-index: 1; text-decoration: none;" target="_blank">
-                    <div class="ttp-content-img">
-                        <img src="./Additional/zoom.png" alt="zoom logo" style="max-width: 153px; height: auto;">
-                    </div>
-                    <div class="ttp-content-desc">
-                        <div class="ttp-content-desc-text">
-                            ZOOM MEETING
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <a href="https://zoom.us/download" class="ttp-wrapper flex-column text-white" style="text-decoration: none; position: relative; z-index: 100;" target="_blank">
+                        <div class="ttp-content-img">
+                            <img src="./Additional/zoom.png" alt="zoom logo" style="max-width: 153px; height: auto;">
                         </div>
-                    </div>
-                </a>
+                        <div class="ttp-content-desc">
+                            <div class="ttp-content-desc-text">
+                                ZOOM MEETING
+                            </div>
+                        </div>
+                    </a>
+                </div>
                 <!-- End of Zoom Meeting Card -->
             </div>
             <div class="astronaut">
@@ -570,7 +616,7 @@
             </center>
         </div>
         <div class="container-fluid-md-12 py-5 d-flex justify-content-center">
-            <div class="col-11">
+            <div class="col-11" style="position: relative; z-index: 100;">
                 <div class="accordion accordion-flush " id="faqlist" data-aos="flip-up" data-aos-duration="1000">
                     <h4 class="title">Seputar Techo dan Pendaftaran</h4>
                     <h2 class="accordion-header">
@@ -617,7 +663,7 @@
             </div>
         </div>
         <div class="container-md-12 py-5 d-flex justify-content-center">
-            <div class="col-11">
+            <div class="col-11" style="position: relative; z-index: 100;">
                 <div class="accordion accordion-flush " id="faqlist2" data-aos="flip-up" data-aos-duration="1000">
                     <h4 class="title">Sesi Pengenalan Bahasa Pemrograman (PBP)</h4>
                     <h2 class="accordion-header">
@@ -660,7 +706,7 @@
         </div>
 
         <div class="container-md-12 py-5 d-flex justify-content-center">
-            <div class="col-11">
+            <div class="col-11" style="position: relative; z-index: 100;">
                 <div class="accordion accordion-flush" id="faqlist3" data-aos="flip-up" data-aos-duration="1000">
                     <h4 class="title">Main Event Techno</h4>
                     <h2 class="accordion-header">
@@ -678,7 +724,7 @@
         </div>
 
         <div class="container-md-12 py-5 d-flex justify-content-center">
-            <div class="col-11">
+            <div class="col-11" style="position: relative; z-index: 100;">
                 <div class="accordion accordion-flush" id="faqlist4" data-aos="flip-up" data-aos-duration="1000">
                     <h4 class="title">Himti Kit</h4>
                     <h2 class="accordion-header">
@@ -731,18 +777,18 @@
         <div class="container-fluid position-relative" style="overflow-x: hidden">
             <div class="sponsorship row">
                 <div class="col-12">
-                    <div class="text-light" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="text-light" data-aos="zoom-in" data-aos-duration="1000" style="position: relative; z-index: 100;">
                         <h1 class="supportedBy">Sponsors</h1>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col rocket-image" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col rocket-image" data-aos="fade-right" data-aos-duration="1000" style="position: relative; z-index: 100;">
                     <img src="Asset/Rocket/Sponsor rocket-1.png" class="img-fluid" alt="" style="width: 1300px; height: auto" />
                 </div>
             </div>
-            <div class="planet">
-                <img src="Asset/Planet/finale-removebg-preview 2.png" class="" alt="" style="width: 480px" />
+            <div class="planet" style="position: absolute; z-index: 100;">
+                <img src="Asset/Planet/finale-removebg-preview 2.png" class="" alt="" style="width: 480px;" />
             </div>
         </div>
 
@@ -750,14 +796,14 @@
             <div class="partner row">
                 <div class="col">
                     <div class="text">
-                        <div class="text-light text-partner" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="text-light text-partner" data-aos="zoom-in" data-aos-duration="1000" style="position: relative; z-index: 100;">
                             <h1 class="supportedBy">Media Partners</h1>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="partners-baris">
-                <div class="col d-flex justify-content-end rocket-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col d-flex justify-content-end rocket-image" data-aos="fade-left" data-aos-duration="1000" style="position: relative; z-index: 100;">
                     <img src="Asset/Rocket/Media partner rocket-2.png" class="img-fluid " alt="" style="width: 1300px; height: auto" />
                 </div>
             </div>
@@ -768,19 +814,19 @@
                 <div>
                     <div class="powered text-center text-light">
                         <h1 class="supportedBy" data-aos="zoom-in" data-aos-duration="1000">Supported By</h1>
-                        <a href="https://www.dewaweb.com/" class="dewaWebCenter" style="z-index: 1; text-decoration: none;" target="_blank" data-aos="flip-up" data-aos-duration="1000">
+                        <a href="https://www.dewaweb.com/" class="dewaWebCenter" style="position: relative; z-index: 100;text-decoration: none;" target="_blank" data-aos="flip-up" data-aos-duration="1000">
                             <img src="./Asset/Dewaweb/Group 102.png" class="img py-md-5 py-3" alt="logo dewaweb" />
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="planet-kiri">
-                <img src="Asset/Planet/finale-removebg-preview 1.png" class="" alt="" style="width: 480px" />
+            <div class="planet-kiri" style="position: absolute; z-index: 100;">
+                <img src="Asset/Planet/finale-removebg-preview 1.png" class="" alt="" style="width: 480px;" />
             </div>
         </div>
     </section>
     <!-- End of Our Partners Section -->
-    <div id="foot">
+    <div id="foot" style="position: relative; z-index: 100;">
         <div class="foot-sprinkle">
             <div class="hole">
                 <div class="foot-paddings">
@@ -918,15 +964,6 @@
         });
     </script>
     <script>
-        $(window).scroll(function() {
-            if ($(window).scrollTop()) {
-                $('.napbar').addClass('black');
-            } else {
-                $('.napbar').removeClass('black');
-            }
-        });
-    </script>
-    <script>
         $(window).on("load", function() {
             $(".loader").fadeOut("slow");
         });
@@ -937,6 +974,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 1) {
+                document.querySelector('nav').style.backgroundColor = "#201E41";
+            } else {
+                document.querySelector('nav').style.backgroundColor = "transparent";
+            }
+        });
     </script>
 </body>
 

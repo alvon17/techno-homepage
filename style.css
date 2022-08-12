@@ -90,8 +90,9 @@
 /* baru */
 
 .introduction {
+    z-index: 110;
     transform: translateY(-20px);
-    padding: 55px;
+    padding: 30px 50px;
 }
 
 .aboutContent {
@@ -100,21 +101,52 @@
     align-items: center;
 }
 
+.baru {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width:442px) {
+    .containerTimeline {
+        padding-top: 100px;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     .introduction {
-        padding: 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 100%;
     }
 
     .baru {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
     }
 
     .butcon button {
         width: 15rem;
+    }
+}
+
+.main .btn {
+    position: relative;
+    z-index: 100;
+}
+
+.main img {
+    position: relative;
+    z-index: 100;
+}
+
+@media (max-width: 767px) {
+    .whatzz {
+        font-size: 1.5rem;
     }
 }

@@ -17,6 +17,7 @@
         transition: all 0.5s ease-in-out;
         cursor: pointer;
         background-color: #f9ed87;
+        z-index: 1;
     }
 
     .btn-menu-line1 {
@@ -48,16 +49,16 @@
     /*menu area*/
     .nav-area {
         position: fixed;
-        width: 180px;
-        height: auto;
-        padding: 10px;
-        border-radius: 5px;
-        top: 65px;
-        right: 32px;
-        background: #333332;
+        width: 12rem;
+        border-radius: 7px 0 0 7px;
+        top: 0px;
+        right: 0;
+        background: linear-gradient(180deg, #df7c88 0%, #efa3c3 100%);
         opacity: 0;
         visibility: hidden;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-out;
+        height: 100%;
+        z-index: 0;
     }
 
     .nav-area.unhideMenu {
@@ -69,11 +70,31 @@
     .nav-item a {
         color: whitesmoke;
         border-bottom: 1px solid white;
+        text-align: center;
     }
 
     /*introduction area*/
 
     .introduction p {
         font-size: 16px;
+    }
+
+    .login-mobile p {
+        padding: 5px 8px;
+    }
+    
+    .login-mobile {
+        border-radius: 27.5px;
+        background: transparent;
+        border: solid 2px #ffffff;
+        color: #ffffff;
+        width: 50%;
+        margin-left: 3rem;
+    }
+    
+    .login-mobile:hover {
+        border: solid 2px #f9ed87;
+        color: #f9ed87;
+        background: transparent;
     }
 }
