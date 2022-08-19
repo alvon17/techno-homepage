@@ -1,0 +1,71 @@
+@media (min-width:1024px) and (max-width:1069px) {
+    .planets {
+        transform: translate(140px, -30px)
+    }
+}
+
+@media(min-height:1024px) and (min-width:1024px) {
+    .planets {
+        padding-top: 10px
+    }
+}
+
+
+
+@media (min-width: 1024px) and (min-height: 1080px) {
+    .timeline-line {
+        width: 0.45rem !important;
+    }
+
+    .timeline-titik {
+        min-width: 0.95rem !important;
+        height: 0.95rem !important;
+    }
+
+    .timeline-select-line {
+        height: 0.35rem !important;
+    }
+
+    .container-card-timeline {
+        width: 450px !important;
+        height: 200px !important;
+    }
+
+    .card-timeline {
+        width: 450px !important;
+        background-position: center !important;
+        height: 200px !important;
+        max-width: 100% !important;
+    }
+
+    .line-timeline {
+        top: 10rem !important;
+        right: 0.2rem !important;
+    }
+
+    .text-year {
+        top: 8rem !important;
+        right: 0rem !important;
+        line-height: 0 !important;
+    }
+
+    .container-all-timeline {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-header {
+        padding-top: 0 !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-header {
+        padding-top: 60px;
+    }
+
+    .faq-text {
+        padding-top: 60px;
+    }
+}
