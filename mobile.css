@@ -588,12 +588,6 @@
     }
 }
 
-@media only screen and (max-width:442px) {
-    .containerTimeline {
-        padding-top: 100px
-    }
-}
-
 @media only screen and (max-width:950px) {
     .introduction {
         display: flex;
@@ -757,5 +751,66 @@
 
     .text-year {
         right: 7rem !important;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .card-expo{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:820px) {
+    .card-expo{
+        height: 380px;
+    }
+}
+@media only screen and (max-width:767px) {
+    .card-expo{
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .card-expo{
+        height: 300px;
+    }
+    .expo-wrapper{
+    width: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    }
+    .maskot-expo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .gambar-maskot-expo{
+        width:300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:440px) {
+    .card-expo{
+        height: 310px;
+    }
+    .expo-wrapper{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    }
+    .content-expo{
+        font-size: 16px;
+    }
+    .gambar-maskot-expo{
+        width:230px;
+        height: 230px;
+    }
+}
+@media only screen and (max-width:350px) {
+    .card-expo{
+        height: 330px;
+    }
+    .content-expo{
+        font-size: 15px;
     }
 }

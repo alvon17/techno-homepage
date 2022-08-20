@@ -51,8 +51,6 @@
 
 #stars3,
 #stars3:after {
-    position: relative;
-    z-index: -10;
     width: 3px;
     height: 3px;
     box-shadow: 1936px 352px #e4498f, 976px 546px #e4498f, 1255px 1061px #e4498f, 187px 1312px #e4498f, 1445px 1296px #e4498f, 1736px 517px #e4498f, 733px 1672px #e4498f, 1508px 590px #e4498f, 1079px 471px #e4498f, 533px 1855px #e4498f, 1734px 1540px #e4498f, 1814px 190px #e4498f, 1456px 841px #e4498f, 852px 751px #e4498f, 908px 1227px #e4498f, 580px 342px #e4498f, 418px 49px #e4498f, 1881px 1489px #e4498f, 103px 1130px #e4498f, 395px 1686px #e4498f, 145px 345px #e4498f, 336px 1529px #e4498f, 166px 10px #e4498f, 1193px 228px #e4498f, 1355px 191px #e4498f, 76px 1032px #e4498f, 581px 1382px #e4498f, 218px 904px #e4498f, 486px 859px #e4498f, 1470px 1856px #e4498f, 363px 1240px #e4498f, 310px 375px #e4498f, 336px 927px #e4498f, 1645px 734px #e4498f, 147px 77px #e4498f, 601px 1379px #e4498f, 948px 1867px #e4498f, 1468px 585px #e4498f, 1373px 1603px #e4498f, 477px 248px #e4498f, 649px 1417px #e4498f, 475px 242px #e4498f, 1789px 750px #e4498f, 480px 2000px #e4498f, 1482px 1250px #e4498f, 1381px 1865px #e4498f, 1579px 925px #e4498f, 1217px 1174px #e4498f, 242px 1028px #e4498f, 892px 1521px #e4498f, 6px 339px #e4498f, 1915px 974px #e4498f, 1470px 1683px #e4498f, 1937px 51px #e4498f, 1391px 1693px #e4498f, 881px 1643px #e4498f, 1640px 1960px #e4498f, 337px 1387px #e4498f, 222px 1863px #e4498f, 1144px 1237px #e4498f, 1293px 1805px #e4498f, 1167px 964px #e4498f, 824px 270px #e4498f, 1347px 1400px #e4498f, 889px 328px #e4498f, 1386px 635px #e4498f, 1002px 118px #e4498f, 800px 1007px #e4498f, 1150px 1068px #e4498f, 692px 1394px #e4498f, 1449px 1734px #e4498f, 564px 811px #e4498f, 1770px 839px #e4498f, 630px 321px #e4498f, 1139px 32px #e4498f, 971px 1722px #e4498f, 1007px 538px #e4498f, 1090px 717px #e4498f, 577px 1557px #e4498f, 1317px 191px #e4498f, 1769px 771px #e4498f, 1538px 775px #e4498f, 187px 624px #e4498f, 384px 1448px #e4498f, 71px 1612px #e4498f, 550px 249px #e4498f, 273px 1434px #e4498f, 1771px 753px #e4498f, 647px 1801px #e4498f, 1723px 283px #e4498f, 123px 1606px #e4498f, 557px 1975px #e4498f, 157px 1533px #e4498f, 327px 721px #e4498f, 1180px 546px #e4498f, 412px 1400px #e4498f, 1533px 110px #e4498f, 1669px 1780px #e4498f, 1829px 1352px #e4498f, 324px 335px #e4498f
@@ -158,7 +156,7 @@ html {
 
 #stars:after {
     position: relative;
-    z-index: -10
+    z-index: -10;
 }
 
 #stars2 {
@@ -169,11 +167,18 @@ html {
 
 #stars2:after {
     position: relative;
-    z-index: -10
+    z-index: -10;
 }
 
 #stars3 {
+    position: relative;
+    z-index: -10;
     animation: 150s linear infinite animStar
+}
+
+#stars2:after {
+    position: relative;
+    z-index: -10;
 }
 
 @keyframes animStar {
@@ -485,11 +490,83 @@ body {
     background: #2a264a
 }
 
-.main-event {
-    background: url(./Asset/Sprinkles/Main\ events\ sprinkles.webp) 0 0/132vw 100vw, url(./Asset/Background/bg-main-events.webp) 0 0/80% 55% no-repeat #1E2142;
+#expo{
+    position: relative;
+    background: #1E2142;
+    height: auto;
+}
+
+.expo{
+    padding: 15% 0 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expo-wrapper{
+    background: rgba(64, 61, 94, .5);
+    width: 90%;
+    height: auto;
     padding-right: 0 !important;
     padding-left: 0 !important;
-    background-position-x: center, 3.9rem;
+    border-radius: 65px;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+.title-expo{
+    margin-top: 60px;
+    margin-bottom: 70px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.card-expo{
+    height: 400px;
+    width: 100%;
+}
+
+.location-expo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    font-size: 25px;
+    border-radius: 33px 33px 0 0;
+    background: linear-gradient(to bottom, #EA9EBC, #C8788B );
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
+    font-family: Fredoka;
+    font-weight: 700;
+}
+
+.content-expo{
+    display: flex;
+    flex-direction:column;
+    height: 70%;
+    width: 100%;
+    font-size: 20px;
+    border-radius:0 0 33px 33px;
+    padding :  20px 25px 0  25px;
+    background: #4C3D70;
+    font-family: Fredoka;
+    font-weight: 700;
+}
+.maskot-expo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-event {
+    background: url(./Asset/Sprinkles/Main\ events\ sprinkles.webp) 0 0/132vw 100vw, url(./Asset/Background/bg-main-events.webp) 0 14% /92% no-repeat #1E2142;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    background-position-x: center, 6.9rem;
+    background-position-y: center, 13rem;
     color: #fff;
     overflow: hidden
 }
