@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TECHNO 2022</title>
     <link rel="icon" href="Logo/T_1_rev2_angka22.ico">
-    <link rel="stylesheet" href="bootstrap.css" />
-    <script type="text/javascript" src="jquery.js" async></script>
+    <link rel="stylesheet preload" href="/dist/bootstrap.css" />
+    <!-- <script type="text/javascript" src="jquery.js"></script> -->
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preload" href="mobile.css" media="(max-width: 1023px)" as="style" onload="this.rel='stylesheet'"/>
-    <link rel="preload" href="desktop.css" media="(min-width: 1024px)" as="style" onload="this.rel='stylesheet'"/>
+    <!-- <link rel="preload" href="mobile.css" media="(max-width: 1023px)" as="style" onload="this.rel='stylesheet'"/>
+    <link rel="preload" href="desktop.css" media="(min-width: 1024px)" as="style" onload="this.rel='stylesheet'"/> -->
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="aos-master/dist/aos.css">
     <script src="menu.js" defer></script>
 </head>
 
 <body>
-    <div id="loader" class="center"></div>
+    <div class="loader">
+        <img src="./Asset/loading_coba.gif" alt="Loading...">
+    </div>
+
     <section id="header">
         <div id="stars" style="z-index: -10;"></div>
         <div id="stars2" style="z-index: -10;"></div>
@@ -106,7 +109,7 @@
 
     <section id="about-us">
         <div class="top-0 bod md:container-fluid position-relative d-flex align-items-lg-center justify-content-center aboutContent"
-            style="background-image: url( './Asset/5445591-01\ 7.webp')">
+            style="background-image: url( './Asset/5445591-01\ 7.webp');">
             <div class="planet-1"></div>
             <!-- position-absolute row d-flex justify-content-between flex-row align-items-center mx-2 py-5  -->
             <div class="container-fluid flex flex-col items-center w-auto justify-center introduction">
@@ -134,182 +137,185 @@
             </div>
         </div>
     </section>
-    <div class="relative flex h-screen w-full items-center justify-center bg-[#1E2142] containerTimeline">
-        <img src="Asset/Planet/BUM11I 3 (2).webp" class="planetBaru" alt="" />
+    <section class="timeline">
 
-        <!-- <div class="flex space-x-2 justify-center toggle ">
-          <button type="button " class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-                        active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ">Button</button>
-        </div> -->
-        <div class="relative flex h-screen w-full items-center justify-center "
-            style="background-image: url( './Asset/5445591-01\ 7.webp')">
+        <div class="relative flex h-screen w-full items-center justify-center bg-[#1E2142] containerTimeline">
+            <img src="Asset/Planet/BUM11I 3 (2).webp" class="planetBaru" alt="" />
+    
             <!-- <div class="flex space-x-2 justify-center toggle ">
-          <button type="button " class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-                        active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ">Button</button>
-        </div> -->
-            <div
-                class="flex flex-col relative items-center justify-center h-4/5 w-full lg:w-[39%] overflow-hidden container-all-timeline">
-                <div class="absolute top-0 left-0 w-full flex flex-col items-center" data-aos="zoom-in"
-                    data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-                    <h2 class="timeline-heading text-white" style="font-size: 5vw; line-height: 2.5rem;">
-                        TIMELINE
-                    </h2>
-                    <div class="imageLine" style="width: 50%;">
-                        <img src="Asset/Vector.webp" alt="" style="margin-top: 2vw;">
+              <button type="button " class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ">Button</button>
+            </div> -->
+            <div class="relative flex h-screen w-full items-center justify-center "
+                style="background-image: url( './Asset/5445591-01\ 7.webp');">
+                <!-- <div class="flex space-x-2 justify-center toggle ">
+              <button type="button " class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ">Button</button>
+            </div> -->
+                <div
+                    class="flex flex-col relative items-center justify-center h-full w-full lg:w-[39%] overflow-hidden container-all-timeline">
+                    <div class="absolute top-0 left-0 w-full flex flex-col items-center" data-aos="zoom-in"
+                        data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                        <h2 class="timeline-heading text-white" style="font-size: 5vw; line-height: 4.5rem;">
+                            TIMELINE
+                        </h2>
+                        <div class="imageLine" style="width: 50%; display: flex; justify-content: center;">
+                            <img src="Asset/Vector.webp" alt="" style="margin-top: 1vw;">
+                        </div>
                     </div>
+    
+                    <div class="flex flex-col relative mt-16 items-center justify-center w-full h-full isiTimeline"
+                        data-aos="flip-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom"
+                        style="position: relative; z-index: 100;">
+                        <div class="flex absolute card justify-center t4-alt container-card-timeline" id="c7">
+                            <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
+                                style="background-image: url( 'Logo/HTTP\ 2015.webp'); background-size: cover;"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t3-alt container-card-timeline" id="c6">
+                            <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
+                                style="background-image: url( 'Logo/HTTP\ 2016.webp'); background-size: cover;"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t2-alt container-card-timeline" id="c5">
+                            <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
+                                style="background-image: url( 'Logo/HTTP\ 2017.webp'); background-size: cover;"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t1 container-card-timeline" id="c4">
+                            <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
+                                style="background-image: url( 'Logo/HTTP\ 2018.webp'); background-size: cover;"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t2 container-card-timeline" id="c3">
+                            <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
+                                style="background-image: url( 'Logo/http-2019.webp'); background-size: cover;"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t3 container-card-timeline" id="c2">
+                            <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
+                                style="background-image: url( 'Logo/HTTP\ 2020.webp'); background-size: cover;"></div>
+                        </div>
+                        <div class="flex absolute card justify-center t4 container-card-timeline" id="c1">
+                            <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
+                                style="background-image: url( 'Logo/TECHNO-2021.webp'); background-size: cover;"></div>
+                        </div>
+                    </div>
+    
+                    <!-- timeline -->
+                    <span class="top-16 font-semibold text-[#9145bb] right-3 absolute text-year">2015</span>
+                    <div class="top-[6rem] right-6 flex h-full flex-col absolute line-timeline"
+                        style="position: absolute; z-index: 101;">
+                        <div
+                            class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
+                            <!-- indicator -->
+                            <div
+                                class="top-3 right-[1.2rem] z-50 absolute indicator i-1 flex h-full flex-col absolute transition-all duration-300 opacity-0">
+                                <div class="relative">
+                                    <div
+                                        class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./indicator -->
+                            <a data-timeline="7"
+                                class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 -right-1 bullet-timeline absolute bg-[#9145bb] rounded-full"></a>
+                        </div>
+                        <div
+                            class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
+                            <!-- indicator -->
+                            <div
+                                class="top-3 right-[1.2rem] z-50 absolute indicator i-2 flex h-full flex-col absolute transition-all duration-300 opacity-0">
+                                <div class="relative">
+                                    <div
+                                        class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./indicator -->
+                            <a data-timeline="6 "
+                                class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
+                        </div>
+                        <div
+                            class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
+                            <!-- indicator -->
+                            <div
+                                class="top-3 right-[1.2rem] z-50 absolute indicator i-3 flex h-full flex-col absolute transition-all duration-300 opacity-0">
+                                <div class="relative ">
+                                    <div
+                                        class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./indicator -->
+                            <a data-timeline="5"
+                                class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
+                        </div>
+                        <div
+                            class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
+                            <!-- indicator -->
+                            <div
+                                class="top-3 right-[1.2rem] z-50 absolute indicator i-4 flex h-full flex-col absolute transition-all duration-300">
+                                <div class="relative">
+                                    <div
+                                        class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./indicator -->
+                            <a data-timeline="4"
+                                class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
+                        </div>
+                        <div
+                            class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
+                            <!-- indicator -->
+                            <div
+                                class="top-3 right-[1.2rem] z-50 absolute indicator i-5 flex h-full flex-col absolute transition-all duration-300 opacity-0">
+                                <div class="relative">
+                                    <div
+                                        class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./indicator -->
+                            <a data-timeline="3"
+                                class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
+                        </div>
+                        <div
+                            class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
+                            <!-- indicator -->
+                            <div
+                                class="top-3 right-[1.2rem] z-50 absolute indicator i-6 flex h-full flex-col absolute transition-all duration-300 opacity-0">
+                                <div class="relative">
+                                    <div
+                                        class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./indicator -->
+                            <a data-timeline="2"
+                                class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
+                        </div>
+                        <div
+                            class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
+                            <!-- indicator -->
+                            <div
+                                class="top-3 right-[1.2rem] z-50 absolute indicator i-7 flex h-full flex-col absolute transition-all duration-300 opacity-0">
+                                <div class="relative ">
+                                    <div
+                                        class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./indicator -->
+                            <a data-timeline="1 "
+                                class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
+                            <span class="-bottom-8 font-semibold text-[#9145bb] -left-6 absolute" style="left: -1rem;">2021</span>
+                        </div>
+                    </div>
+                    <!-- ./timeline -->
                 </div>
-
-                <div class="flex flex-col relative mt-16 items-center justify-center w-full h-full isiTimeline"
-                    data-aos="flip-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom"
-                    style="position: relative; z-index: 100;">
-                    <div class="flex absolute card justify-center t4-alt container-card-timeline" id="c7">
-                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
-                            style="background-image: url( 'Logo/HTTP\ 2015.webp'); background-size: cover;"></div>
-                    </div>
-                    <div class="flex absolute card justify-center t3-alt container-card-timeline" id="c6">
-                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
-                            style="background-image: url( 'Logo/HTTP\ 2016.webp'); background-size: cover;"></div>
-                    </div>
-                    <div class="flex absolute card justify-center t2-alt container-card-timeline" id="c5">
-                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
-                            style="background-image: url( 'Logo/HTTP\ 2017.webp'); background-size: cover;"></div>
-                    </div>
-                    <div class="flex absolute card justify-center t1 container-card-timeline" id="c4">
-                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
-                            style="background-image: url( 'Logo/HTTP\ 2018.webp'); background-size: cover;"></div>
-                    </div>
-                    <div class="flex absolute card justify-center t2 container-card-timeline" id="c3">
-                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
-                            style="background-image: url( 'Logo/http-2019.webp'); background-size: cover;"></div>
-                    </div>
-                    <div class="flex absolute card justify-center t3 container-card-timeline" id="c2">
-                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
-                            style="background-image: url( 'Logo/HTTP\ 2020.webp'); background-size: cover;"></div>
-                    </div>
-                    <div class="flex absolute card justify-center t4 container-card-timeline" id="c1">
-                        <div class="block max-w-sm rounded-lg border-2 border-[#9145bb] bg-[#403d5e] py-3 p-6 isi card-timeline"
-                            style="background-image: url( 'Logo/TECHNO-2021.webp'); background-size: cover;"></div>
-                    </div>
-                </div>
-
-                <!-- timeline -->
-                <span class="top-16 font-semibold text-[#9145bb] right-3 absolute text-year">2015</span>
-                <div class="top-[6rem] right-6 flex h-full flex-col absolute line-timeline"
-                    style="position: absolute; z-index: 101;">
-                    <div
-                        class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
-                        <!-- indicator -->
-                        <div
-                            class="top-3 right-[1.2rem] z-50 absolute indicator i-1 flex h-full flex-col absolute transition-all duration-300 opacity-0">
-                            <div class="relative">
-                                <div
-                                    class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./indicator -->
-                        <a data-timeline="7"
-                            class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 -right-1 bullet-timeline absolute bg-[#9145bb] rounded-full"></a>
-                    </div>
-                    <div
-                        class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
-                        <!-- indicator -->
-                        <div
-                            class="top-3 right-[1.2rem] z-50 absolute indicator i-2 flex h-full flex-col absolute transition-all duration-300 opacity-0">
-                            <div class="relative">
-                                <div
-                                    class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./indicator -->
-                        <a data-timeline="6 "
-                            class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
-                    </div>
-                    <div
-                        class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
-                        <!-- indicator -->
-                        <div
-                            class="top-3 right-[1.2rem] z-50 absolute indicator i-3 flex h-full flex-col absolute transition-all duration-300 opacity-0">
-                            <div class="relative ">
-                                <div
-                                    class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./indicator -->
-                        <a data-timeline="5"
-                            class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
-                    </div>
-                    <div
-                        class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
-                        <!-- indicator -->
-                        <div
-                            class="top-3 right-[1.2rem] z-50 absolute indicator i-4 flex h-full flex-col absolute transition-all duration-300">
-                            <div class="relative">
-                                <div
-                                    class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./indicator -->
-                        <a data-timeline="4"
-                            class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
-                    </div>
-                    <div
-                        class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
-                        <!-- indicator -->
-                        <div
-                            class="top-3 right-[1.2rem] z-50 absolute indicator i-5 flex h-full flex-col absolute transition-all duration-300 opacity-0">
-                            <div class="relative">
-                                <div
-                                    class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./indicator -->
-                        <a data-timeline="3"
-                            class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
-                    </div>
-                    <div
-                        class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
-                        <!-- indicator -->
-                        <div
-                            class="top-3 right-[1.2rem] z-50 absolute indicator i-6 flex h-full flex-col absolute transition-all duration-300 opacity-0">
-                            <div class="relative">
-                                <div
-                                    class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./indicator -->
-                        <a data-timeline="2"
-                            class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
-                    </div>
-                    <div
-                        class="timeline-line h-[10.4%] w-1 relative bg-[#9145bb] bg-opacity-60 flex container-indicator">
-                        <!-- indicator -->
-                        <div
-                            class="top-3 right-[1.2rem] z-50 absolute indicator i-7 flex h-full flex-col absolute transition-all duration-300 opacity-0">
-                            <div class="relative ">
-                                <div
-                                    class="timeline-select-line min-w-[2rem] h-0.5 absolute -right-1 top-4 bg-[#9145bb]">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ./indicator -->
-                        <a data-timeline="1 "
-                            class="timeline-titik top-6 min-w-[0.75rem] cursor-pointer h-3 hover:opacity-80 bullet-timeline -right-1 absolute bg-[#9145bb] rounded-full"></a>
-                        <span class="-bottom-8 font-semibold text-[#9145bb] -left-6 absolute">2021</span>
-                    </div>
-                </div>
-                <!-- ./timeline -->
             </div>
+    
+            <img src="Asset/Planet/finale-removebg-preview 2.svg" class="planetBaru2" alt="" />
+    
         </div>
-
-        <img src="Asset/Planet/finale-removebg-preview 2.svg" class="planetBaru2" alt="" />
-
-    </div>
+    </section>
     <section id="benefits" style="background-image: url( './Asset/5445591-01\ 7.webp');">
         <div id="box-benefits">
             <div class="outer-box" style="position: relative; z-index: 100;">
@@ -379,12 +385,12 @@
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="1"
+                    <!-- <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carouselEventsIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
+                        aria-label="Slide 4"></button> -->
                 </div>
                 <div class="header">
                     <div class="text-header" data-aos="zoom-in" data-aos-duration="1000">EVENTS</div>
@@ -402,7 +408,7 @@
                                                 style="max-width: 365px; height: auto;">
                                         </div>
                                         <div class="event-desc" data-aos="flip-left" data-aos-duration="1000">
-                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 4</div>
+                                            <div class="header-event-desc" style="text-align: center;">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 5</div>
                                             <br>
                                             <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan
                                                 oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang
@@ -411,21 +417,21 @@
                                                 mencoba coding.
                                             </p>
                                             <br>
-                                            <p>Date : Senin, 22 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : A
+                                            <p>Date : Senin, 29 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : A
                                                 <br> Time : 09.00 - 11.00
                                             </p>
                                         </div>
                                     </div>
                                     <div class="register-button" data-aos="fade-left" data-aos-duration="1000">
                                         <button
-                                            onclick="window.open('https://registration.himtibinus.or.id/events/44');"
+                                            onclick="window.open('https://registration.himtibinus.or.id/events/48');"
                                             type="button" class="button">Register</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                         <div class="event-wrapper flex-column mb-5">
                             <div class="event-wrapper-content">
                                 <div class="events-content row d-flex justify-content-evenly align-items-center">
@@ -435,7 +441,7 @@
                                                 style="max-width: 365px; height: auto;">
                                         </div>
                                         <div class="event-desc" data-aos="flip-left" data-aos-duration="1000">
-                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 4</div>
+                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 5</div>
                                             <br>
                                             <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan
                                                 oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang
@@ -444,21 +450,21 @@
                                                 mencoba coding.
                                             </p>
                                             <br>
-                                            <p>Date : Senin, 22 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : B
-                                                <br> Time : 09.30 - 11.30
+                                            <p>Date : Senin, 29 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : A
+                                                <br> Time : 09.00 - 11.00
                                             </p>
                                         </div>
                                     </div>
                                     <div class="register-button" data-aos="fade-left" data-aos-duration="1000">
                                         <button
-                                            onclick="window.open('https://registration.himtibinus.or.id/events/45');"
+                                            onclick="window.open('https://registration.himtibinus.or.id/events/48');"
                                             type="button" class="button">Register</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
+                    </div> -->
+                    <!-- <div class="carousel-item">
                         <div class="event-wrapper flex-column mb-5">
                             <div class="event-wrapper-content">
                                 <div class="events-content row d-flex justify-content-evenly align-items-center">
@@ -468,7 +474,7 @@
                                                 style=" max-width: 365px; height: auto; ">
                                         </div>
                                         <div class=" event-desc " data-aos=" flip-left " data-aos-duration=" 1000 ">
-                                            <div class=" header-event-desc ">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 4</div>
+                                            <div class=" header-event-desc ">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 5</div>
                                             <br>
                                             <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan
                                                 oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang
@@ -477,21 +483,21 @@
                                                 mencoba coding.
                                             </p>
                                             <br>
-                                            <p>Date : Senin, 22 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : C
-                                                <br> Time : 13.00 - 15.00
+                                            <p>Date : Senin, 29 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : A
+                                                <br> Time : 09.00 - 11.00
                                             </p>
                                         </div>
                                     </div>
                                     <div class=" register-button " data-aos=" fade-left " data-aos-duration=" 1000 ">
                                         <button
-                                            onclick=" window.open( 'https://registration.himtibinus.or.id/events/46' ); "
+                                            onclick=" window.open('https://registration.himtibinus.or.id/events/48'); "
                                             type=" button " class=" button ">Register</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" carousel-item ">
+                    </div> -->
+                    <!-- <div class=" carousel-item ">
                         <div class=" event-wrapper flex-column mb-5 ">
                             <div class=" event-wrapper-content ">
                                 <div class=" events-content row d-flex justify-content-evenly align-items-center ">
@@ -502,7 +508,7 @@
                                                 style="max-width: 365px; height: auto;">
                                         </div>
                                         <div class="event-desc" data-aos="flip-left" data-aos-duration="1000">
-                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 4</div>
+                                            <div class="header-event-desc">PEMBELAJARAN BAHASA PEMROGRAMAN BATCH 5</div>
                                             <br>
                                             <p>PBP atau Pengenalan Bahasa Pemrograman adalah benefit yang didapatkan
                                                 oleh peserta TECHNO 2022. Pada sesi pembelajaran ini, materi yang
@@ -511,20 +517,20 @@
                                                 mencoba coding.
                                             </p>
                                             <br>
-                                            <p>Date : Senin, 22 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : D
-                                                <br> Time : 13.30 - 15.30
+                                            <p>Date : Senin, 29 Agustus 2022 <br> Location : Zoom Meeting <br> Shift : A
+                                                <br> Time : 09.00 - 11.00
                                             </p>
                                         </div>
                                     </div>
                                     <div class="register-button" data-aos="fade-left" data-aos-duration="1000">
                                         <button
-                                            onclick="window.open('https://registration.himtibinus.or.id/events/47');"
+                                            onclick="window.open('https://registration.himtibinus.or.id/events/48');"
                                             type="button" class="button">Register</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventsIndicators"
                     data-bs-slide="prev">
@@ -684,7 +690,7 @@
                     <div class="text-header text-white" data-aos="zoom-in">MAIN EVENT</div>
                     <div class="main-event-hr mt-3"></div>
                 </div>
-                <div class="main-event-content row d-flex justify-content-evenly align-items-center">
+                <div class="main-event-content d-flex justify-content-center align-items-center">
                     <div class="mainEvent">
                         <div class="img-main-event col-lg-4" data-aos="zoom-out-right" data-aos-duration="1000">
                             <img src="./Additional/techno-white.webp" alt="techno image"
@@ -694,7 +700,7 @@
                             <div class="header-main-event-desc">PELANTIKAN SOCS BINUSIAN 2026</div>
                             <br>
                             <p>
-                                Pelantikan SOCS BINUSIAN 2026 merupakan salah satu bagian acara di didalam event TECHNO
+                                Pelantikan SOCS BINUSIAN 2026 merupakan salah satu bagian acara pada event TECHNO
                                 2022. Mahasiswa baru School Of Computer Science akan resmi dilantik oleh Dean School Of
                                 Computer Science dan bergabung kedalam komunitas BINUSIAN.
                             </p>
@@ -983,7 +989,7 @@
                 </div>
             </div>
             <div class="planet" style="position: absolute; z-index: 100;">
-                <img src="Asset/Planet/finale-removebg-preview 2.svg" class="" alt="" style="width: 400px;" />
+                <img src="Asset/Planet/finale-removebg-preview 2.svg" class="" alt="" style="width: 400px" />
             </div>
         </div>
 
@@ -1064,10 +1070,14 @@
                         data-aos-duration="1000" />
                 </div>
                 <div class="foot-logobinus">
-                    <img src="Asset/Footer/HIMTI-PUTIH-min 1.webp" alt="" class="img-fluid" data-aos="zoom-out"
-                        data-aos-duration="1000" />
-                    <img src="Asset/Footer/Logo_Binus_Putih 1.webp" alt="" class="img-fluid" data-aos="zoom-out"
-                        data-aos-duration="1000" />
+                    <div class="himti">
+                        <img src="Asset/Footer/HIMTI-PUTIH-min 1.webp" alt="" class="img-fluid" data-aos="zoom-out"
+                            data-aos-duration="1000"/>
+                    </div>
+                    <div class="binus">
+                        <img src="Asset/Footer/Logo_Binus_Putih 1.webp" alt="" class="img-fluid" data-aos="zoom-out"
+                            data-aos-duration="1000" />
+                    </div>
                 </div>
             </div>
             <div class="foot-copyright" data-aos="fade-up" data-aos-duration="1000">
@@ -1080,6 +1090,7 @@
             </div> -->
         </div>
     </div>
+    <script src="jquery.js"></script>
     <script>
         let state_now = 4;
         renderTimeline();
@@ -1162,7 +1173,7 @@
             $(this).prev().addClass('opacity-100');
             setTimeout(() => {
                 clear();
-                $(this).css('transform', 'scale(1.4)');
+                $(this).css('transform', 'scale(1.8)');
             }, 30);
         });
     </script>
@@ -1186,28 +1197,11 @@
             }
         });
     </script>
-    <script type="text/javascript">
-        document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                  "body").style.visibility = "hidden";
-                document.querySelector(
-                  "nav").style.visibility = "hidden";
-                document.querySelector(
-                  "#header").style.visibility = "hidden";
-                document.querySelector(
-                  "#loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                  "#loader").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
-                document.querySelector(
-                  "nav").style.visibility = "visible";
-                document.querySelector(
-                  "#header").style.visibility = "visible";
-            }
-        };
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
     </script>
 </body>
 
