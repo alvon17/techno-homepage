@@ -19,7 +19,7 @@
 
 <body>
     <div class="loader">
-        <img src="./Asset/loading_coba.gif" alt="Loading...">
+        <img src="./Asset/loadertechno.gif" alt="Loading...">
     </div>
 
     <section id="header">
@@ -124,7 +124,7 @@
                         data-aos-duration="1000">
                         TECHNO (Togetherness, Entertainment, and Chasing New Opportunity) merupakan kegiatan tahunan
                         yang diselenggarakan oleh HIMTI BINUS dalam rangka menyambut mahasiswa - mahasiswi baru School
-                        of Computer Science.
+                        of Computer Science dan Faculty of Computing and Media.
                     </p>
                 </div>
                 <div class="w-full butcon" style="background-color: #1E2142;">
@@ -156,7 +156,7 @@
                     class="flex flex-col relative items-center justify-center h-full w-full lg:w-[39%] overflow-hidden container-all-timeline">
                     <div class="absolute top-0 left-0 w-full flex flex-col items-center" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-                        <h2 class="timeline-heading text-white" style="font-size: 5vw; line-height: 4.5rem;">
+                        <h2 class="timeline-heading text-white" style="font-size: 4vw; line-height: 4.5rem;">
                             TIMELINE
                         </h2>
                         <div class="imageLine" style="width: 50%; display: flex; justify-content: center;">
@@ -592,13 +592,14 @@
                         <div class="card-expo" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-anchor-placement="bottom-bottom">
                             <div class="location-expo">
-                                <p>Semarang</p>
+                                <p>Bekasi</p>
                             </div>
                             <div class="content-expo">
-                                <p>Tanggal: 7 September 2022</p>
+                                <p>Tanggal: 5 - 6 September 2022</p>
                                 <p>Jam: 09.00 - 15.00</p>
-                                <p>Lokasi: Lab. Komputer 1 - 2</p>
-
+                                <p>Lokasi: Kampus Bekasi</p>
+                                <li>MMG Lt. 2</li>
+                                <li>Area Kantin Lt. 1</li>
                             </div>
                         </div>
                     </div>
@@ -639,14 +640,12 @@
                         <div class="card-expo" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-anchor-placement="bottom-bottom">
                             <div class="location-expo">
-                                <p>Bekasi</p>
+                                <p>Semarang</p>
                             </div>
                             <div class="content-expo">
-                                <p>Tanggal: 5 - 6 September 2022</p>
+                                <p>Tanggal: 7 September 2022</p>
                                 <p>Jam: 09.00 - 15.00</p>
-                                <p>Lokasi: Kampus Bekasi</p>
-                                <li>MMG Lt. 2</li>
-                                <li>Area Kantin Lt. 1</li>
+                                <p>Lokasi: Lab. Komputer 1 - 2</p>
                             </div>
                         </div>
                     </div>
@@ -662,7 +661,7 @@
                                 <p>Jam: 09.00 - 15.00</p>
                                 <p>Lokasi: Main Lobby</p>
                                 <li>Back Lobby</li>
-                                <li>Coridor Lt. 2 - 3</li>
+                                <li>Corridor Lt. 2 - 3</li>
                             </div>
                         </div>
                     </div>
@@ -977,15 +976,23 @@
                 <div class="col-12">
                     <div class="text-light" data-aos="zoom-in" data-aos-duration="1000"
                         style="position: relative; z-index: 100;">
-                        <h1 class="supportedBy">Sponsors</h1>
+                        <h1 class="supportedBy">Branding By</h1>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col rocket-image" data-aos="fade-right" data-aos-duration="1000"
                     style="position: relative; z-index: 100;">
-                    <img src="Asset/Rocket/Sponsor rocket-1.webp" class="img-fluid" alt=""
-                        style="width: 1300px; height: auto" />
+                    <img src="Asset/Rocket/roket atas.svg" class="img-fluid" alt=""
+                        style="width: 1100px; height: auto" />
+                </div>
+            </div>
+            <div class="branding row">
+                <div class="col-12">
+                    <div class="text-light" data-aos="zoom-in" data-aos-duration="1000"
+                        style="position: relative; z-index: 100;">
+                        <h1 class="supportedBy">Sponsored By</h1>
+                    </div>
                 </div>
             </div>
             <div class="planet" style="position: absolute; z-index: 100;">
@@ -1007,8 +1014,8 @@
             <div class="partners-baris">
                 <div class="col d-flex justify-content-end rocket-image" data-aos="fade-left" data-aos-duration="1000"
                     style="position: relative; z-index: 100;">
-                    <img src="Asset/Rocket/Media partner rocket-2.webp" class="img-fluid " alt=""
-                        style="width: 1300px; height: auto" />
+                    <img src="Asset/Rocket/roket bawah.svg" class="img-fluid " alt=""
+                        style="width: 1100px; height: auto" />
                 </div>
             </div>
         </div>
@@ -1082,7 +1089,7 @@
             </div>
             <div class="foot-copyright" data-aos="fade-up" data-aos-duration="1000">
                 <p>
-                    &copy;2022 Himpunan Mahasiswa Teknik Informatika (HIMTI) BINUS UNIVERSITY. All Rights Reserved
+                    &copy;2022 Himpunan Mahasiswa Teknik Informatika <a href="https://ofog.himti.or.id" target="_blank" class="himti-link">(HIMTI) BINUS UNIVERSITY</a>. All Rights Reserved
                 </p>
             </div>
             <!-- <div class="planets">
@@ -1200,7 +1207,11 @@
     <script>
         window.addEventListener("load", function () {
             const loader = document.querySelector(".loader");
-            loader.className += " hidden";
+            loader.className += " fade-out";
+            var delayInMilliseconds = 1000;
+            setTimeout(function() {
+                loader.className += " hide";
+            }, delayInMilliseconds);
         });
     </script>
 </body>
